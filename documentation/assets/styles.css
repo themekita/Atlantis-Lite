@@ -1,0 +1,237 @@
+.content-documentation{
+	margin-top: 60px !important;
+	padding: 0 !important;
+}
+.content-documentation .container-fluid{
+	padding: 0 !important;
+}
+.letter-icon {
+	font-size: 17px !important;
+}
+.card-documentation > .card-header {
+	padding: 40px 25px;
+}
+.card-documentation > .card-header h4 {
+	font-size: 34px;
+	line-height: 45px;
+}
+.card-documentation > .card-header > p {
+	font-size: 16px;
+	width: 80%;
+	line-height: 2;
+}
+.card-documentation > .card-header a {
+	color: #fff;
+	font-weight: 600;
+	text-decoration: underline;
+}
+.card-documentation > .card-body{
+	padding: 15px 25px;
+}
+.card-documentation > .card-body > h1, .card-documentation > .card-body > h2, .card-documentation > .card-body > h3, .card-documentation > .card-body > h4, .card-documentation > .card-body > h5, .card-documentation > .card-body > h6 {
+	margin-top: 1.8rem;
+}
+.card-documentation > .card-body > p {
+	margin-bottom: 1rem;
+	font-size: 14px;
+	line-height: 1.95;
+	width: 80%;
+}
+.card-documentation .card-body pre[class*="language-"] {
+	margin-bottom: 1rem;
+	padding: 1.5rem;
+	font-size: 13px;
+	max-height: 500px !important;
+	overflow-y: auto;
+}
+.card-documentation > .card-body > ul > li {
+	padding-bottom: 5px;
+}
+.subcontent-title{
+	padding-left: 33px;
+	position: relative;
+	margin-bottom: 15px;
+	font-size: 27px;
+	line-height: 30px;
+	font-weight: 600;
+}
+.subcontent-title span{
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+.subcontent-title:before {
+	content: '#';
+	position: absolute;
+	left: 0;
+	font-size: 46px;
+	color: #acadb1ab;
+	z-index: 1;
+}
+.bd-example {
+	position: relative;
+	padding: 2rem;
+	border: 3px solid #eee;
+}
+.bd-example .fixed-top, .bd-example .sticky-top {
+	position: static;
+	margin: -2rem -2rem 1rem;
+}
+.bd-example .fixed-bottom {
+	position: static;
+	margin: 2rem -2rem -2rem;
+}
+@media (min-width: 576px)  {
+	.bd-example .fixed-top, .bd-example .sticky-top {
+		margin: -1.5rem -1.5rem 1rem;
+	}
+}
+.bd-example-popover-static{
+	background: #fafafa;
+}
+.bd-example-popover-static .popover {
+	position: relative;
+	display: block;
+	float: left;
+	width: 260px;
+	margin: 1.25rem;
+}
+.bd-example-modal {
+	background-color: #eee;
+}
+.bd-example-modal .modal {
+	position: relative;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	z-index: 1;
+	display: block;
+}
+.bd-example-modal .modal-dialog {
+	left: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.bd-callout {
+	padding: 1.25rem;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+	border: 1px solid #eee;
+	border-left-width: .25rem;
+	border-radius: .25rem;
+}
+
+.bd-callout h4 {
+	margin-top: 0;
+	margin-bottom: .25rem;
+	font-size: 26px !important;
+}
+
+.bd-callout p:last-child {
+	margin-bottom: 0;
+}
+
+.bd-callout code {
+	border-radius: .25rem;
+}
+
+.bd-callout + .bd-callout {
+	margin-top: -.25rem;
+}
+
+.bd-callout-info {
+	border-left-color: #05b4d8;
+}
+.bd-callout-info h4 {
+	color: #05b4d8;
+}
+
+.bd-callout-warning {
+	border-left-color: #fdaf4b;
+}
+.bd-callout-warning h4 {
+	color: #fdaf4b;
+}
+
+.bd-callout-danger {
+	border-left-color: #f3545d;
+}
+.bd-callout-danger h4 {
+	color: #f3545d;
+}
+.table-content {
+	background: #f2f2f2;
+	padding: 30px;
+	border-radius: 5px;
+}
+.table-content .title{
+	font-size: 23px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.table-content > ul {
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+.table-content dl, .table-content ol, .table-content ul{
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.table-content dl > li, .table-content ol > li, .table-content ul > li{
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-size: 15px;
+}
+.box-example {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 4px;
+}
+#chart-container {
+	min-height: 300px;
+}
+h5 {
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.demo-loader {
+	display: flex;
+	align-items: center;
+}
+
+.demo-loader .loader {
+	margin-right: 15px;
+}
+
+#demos-carousel .owl-carousel {
+  margin: 2rem 0;
+}
+#demos-carousel .owl-carousel .item {
+  height: 10rem;
+  background: #4DC7A0;
+  padding: 1rem;
+}
+#demos-carousel .owl-carousel .item h4 {
+  color: #FFF;
+  font-weight: 400;
+  margin-top: 0rem;
+}
+#demos-carousel .owl-carousel .item-video {
+  height: 300px;
+}
+#demos-carousel #setup {
+  margin-top: 4rem;
+}
+#demos-carousel .demo-list h5 {
+  margin: 0;
+}
+
+@media only screen {
+  .demo-list [class*="column"] + [class*="column"]:last-child {
+    float: left;
+  }
+}

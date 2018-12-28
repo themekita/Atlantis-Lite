@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Modal | Atlantis Bootstrap Dashboard</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="../../assets/img/icon.ico" type="image/x-icon"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!-- Fonts and icons -->
+	<script src="../../assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../../assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/atlantis.min.css">
+	<link href="../assets/styles.css" rel="stylesheet" />
+	<link href="../assets/prism.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-header">
+			<div class="logo-header" data-background-color="light-blue2">
+				<a href="../index.html" class="logo">
+					<img src="../../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="light-blue2">
+				<div class="container-fluid">
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item">
+							<a href="../../examples/demo1" class="nav-link">
+								Live Preview
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="sidebar sidebar-style-2">
+			<div class="sidebar-background"></div>
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+					<ul class="nav nav-info">
+						<li class="nav-item">
+							<a href="../index.html">
+								<i class="fas fa-home"></i>
+								<p>Introduction</p>
+							</a>
+						</li>
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Components</h4>
+						</li>
+						<li class="nav-item">
+							<a href="../components/alerts.html">
+								<span class="letter-icon">A</span>
+								<p>Alerts</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/avatars.html">
+								<span class="letter-icon">Av</span>
+								<p>Avatars</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/badge.html">
+								<span class="letter-icon">Ba</span>
+								<p>Badge</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/breadcrumb.html">
+								<span class="letter-icon">Bc</span>
+								<p>Breadcrumb</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/buttons.html">
+								<span class="letter-icon">Bt</span>
+								<p>Buttons</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/card.html">
+								<span class="letter-icon">C</span>
+								<p>Card</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/collapse.html">
+								<span class="letter-icon">Co</span>
+								<p>Collapse</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/colors.html">
+								<span class="letter-icon">Cl</span>
+								<p>Colors</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/dropdowns.html">
+								<span class="letter-icon">D</span>
+								<p>Dropdowns</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/forms.html">
+								<span class="letter-icon">F</span>
+								<p>Forms</p>
+							</a>
+						</li>
+						<li class="nav-item">
+						<a href="../components/layoutsbackground.html">
+							<span class="letter-icon">L</span>
+							<p>Layouts Background</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/loaders.html">
+							<span class="letter-icon">Lo</span>
+							<p>Loaders</p>
+						</a>
+					</li>
+						<li class="nav-item active">
+							<a href="../components/modal.html">
+								<span class="letter-icon">M</span>
+								<p>Modal</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/navs.html">
+								<span class="letter-icon">N</span>
+								<p>Navs</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/navbar.html">
+								<span class="letter-icon">Nb</span>
+								<p>Navbar</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/pagination.html">
+								<span class="letter-icon">Pa</span>
+								<p>Pagination</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/popovers.html">
+								<span class="letter-icon">Po</span>
+								<p>Popovers</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/progress.html">
+								<span class="letter-icon">Pr</span>
+								<p>Progress</p>
+							</a>
+						</li>
+						
+						<li class="nav-item">
+							<a href="../components/tables.html">
+								<span class="letter-icon">T</span>
+								<p>Tables</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/tooltips.html">
+								<span class="letter-icon">To</span>
+								<p>Tooltips</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/typography.html">
+								<span class="letter-icon">Ty</span>
+								<p>Typography</p>
+							</a>
+						</li>
+
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Plugins</h4>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/chart.html">
+								<span class="letter-icon">C</span>
+								<p>Chart.js</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/chartcircle.html">
+								<span class="letter-icon">Cc</span>
+								<p>Chart Circle</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/animate.html">
+								<span class="letter-icon">Cs</span>
+								<p>CSS Animate</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/datatables.html">
+								<span class="letter-icon">Da</span>
+								<p>Datatables</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/jqvmap.html">
+								<span class="letter-icon">Jm</span>
+								<p>JQVmap</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/scrollbar.html">
+								<span class="letter-icon">Js</span>
+								<p>Jquery Scrollbar</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/notify.html">
+								<span class="letter-icon">N</span>
+								<p>Notify</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/slider.html">
+								<span class="letter-icon">Sl</span>
+								<p>Slider</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/sweetalert.html">
+								<span class="letter-icon">Sa</span>
+								<p>Sweet Alert</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/sparkline.html">
+								<span class="letter-icon">Sp</span>
+								<p>Sparkline</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main-panel">
+			<div class="content content-documentation">
+				<div class="container-fluid">
+					<div class="card card-documentation">
+						<div class="card-header bg-info-gradient text-white bubble-shadow">
+							<h4>Modal</h4>
+							<p class="mb-0 op-8">Use Bootstrap's JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+						</div>
+						<div class="card-body">
+							<div class="table-content">
+								<span class="title">Table of Content</span>
+								<ul>
+									<li>
+										<a href="#examples">Examples</a>
+										<ol>
+											<li>
+												<a href="#modalcomponents">Modal components</a>
+											</li>
+											<li>
+												<a href="#livedemo">Live Demo</a>
+											</li>
+											<li>
+												<a href="#scrollinglong">Scrolling long content</a>
+											</li>
+											<li>
+												<a href="#verticallycentered">Vertically centered</a>
+											</li>
+											<li>
+												<a href="#embed">Embedding YouTube videos</a>
+											</li>
+										</ol>
+									</li>
+									<li>
+										<a href="#optional">Optional sizes</a>
+									</li>
+									<li>
+										<a href="#usage">Usage</a>
+										<ol>
+											<li>
+												<a href="#viadata">Via data attributes</a>
+											</li>
+											<li>
+												<a href="#viajs">Via JavaScript</a>
+											</li>
+											<li>
+												<a href="#options">Options</a>
+											</li>
+										</ol>
+									</li>
+								</ul>
+							</div>
+							<h4 class="subcontent-title" id="examples">
+								<span>Examples</span>
+							</h4>
+							<h5 id="modalcomponents">Modal components</h5>
+							<p>Below is a <em>static</em> modal example (meaning its <code class="highlighter-rouge">position</code> and <code class="highlighter-rouge">display</code> have been overridden). Included are the modal header, modal body (required for <code class="highlighter-rouge">padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.</p>
+							<div class="bd-example bd-example-modal">
+								<div class="modal" tabindex="-1" role="dialog">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title">Modal title</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">×</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<p>Modal body text goes here.</p>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+										&lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+											&lt;div class=&quot;modal-content&quot;&gt;
+												&lt;div class=&quot;modal-header&quot;&gt;
+													&lt;h5 class=&quot;modal-title&quot;&gt;Modal title&lt;/h5&gt;
+													&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+														&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+													&lt;/button&gt;
+												&lt;/div&gt;
+												&lt;div class=&quot;modal-body&quot;&gt;
+													&lt;p&gt;Modal body text goes here.&lt;/p&gt;
+												&lt;/div&gt;
+												&lt;div class=&quot;modal-footer&quot;&gt;
+													&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+													&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<h5 id="livedemo">Live Demo</h5>
+							<p>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
+							<div class="bd-example">
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+									Launch demo modal
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												Woohoo, you're reading this text in a modal!
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;!-- Button trigger modal --&gt;
+									&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot;&gt;
+										Launch demo modal
+									&lt;/button&gt;
+
+									&lt;!-- Modal --&gt;
+									&lt;div class=&quot;modal fade&quot; id=&quot;exampleModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+										&lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+											&lt;div class=&quot;modal-content&quot;&gt;
+												&lt;div class=&quot;modal-header&quot;&gt;
+													&lt;h5 class=&quot;modal-title&quot; id=&quot;exampleModalLabel&quot;&gt;Modal title&lt;/h5&gt;
+													&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+														&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+													&lt;/button&gt;
+												&lt;/div&gt;
+												&lt;div class=&quot;modal-body&quot;&gt;
+													...
+												&lt;/div&gt;
+												&lt;div class=&quot;modal-footer&quot;&gt;
+													&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+													&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<h5 id="scrollinglong">Scrolling long content</h5>
+							<p>When modals become too long for the user’s viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.</p>
+							<div class="bd-example">
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+									Launch demo modal
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+												<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+												<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+												<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+												<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+												<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+												<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+												<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+												<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+												<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+												<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+												<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+												<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+												<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+												<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+												<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+												<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+												<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;!-- Button trigger modal --&gt;
+									&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModalLong&quot;&gt;
+										Launch demo modal
+									&lt;/button&gt;
+
+									&lt;!-- Modal --&gt;
+									&lt;div class=&quot;modal fade&quot; id=&quot;exampleModalLong&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLongTitle&quot; aria-hidden=&quot;true&quot;&gt;
+										&lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+											&lt;div class=&quot;modal-content&quot;&gt;
+												&lt;div class=&quot;modal-header&quot;&gt;
+													&lt;h5 class=&quot;modal-title&quot; id=&quot;exampleModalLongTitle&quot;&gt;Modal title&lt;/h5&gt;
+													&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+														&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+													&lt;/button&gt;
+												&lt;/div&gt;
+												&lt;div class=&quot;modal-body&quot;&gt;
+													...
+												&lt;/div&gt;
+												&lt;div class=&quot;modal-footer&quot;&gt;
+													&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+													&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<h5 id="verticallycentered">Vertically centered</h5>
+							<p>Add <code class="highlighter-rouge">.modal-dialog-centered</code> to <code class="highlighter-rouge">.modal-dialog</code> to vertically center the modal.</p>
+							<div class="bd-example">
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+									Launch demo modal
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;!-- Button trigger modal --&gt;
+									&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModalCenter&quot;&gt;
+										Launch demo modal
+									&lt;/button&gt;
+
+									&lt;!-- Modal --&gt;
+									&lt;div class=&quot;modal fade&quot; id=&quot;exampleModalCenter&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalCenterTitle&quot; aria-hidden=&quot;true&quot;&gt;
+										&lt;div class=&quot;modal-dialog modal-dialog-centered&quot; role=&quot;document&quot;&gt;
+											&lt;div class=&quot;modal-content&quot;&gt;
+												&lt;div class=&quot;modal-header&quot;&gt;
+													&lt;h5 class=&quot;modal-title&quot; id=&quot;exampleModalLongTitle&quot;&gt;Modal title&lt;/h5&gt;
+													&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+														&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+													&lt;/button&gt;
+												&lt;/div&gt;
+												&lt;div class=&quot;modal-body&quot;&gt;
+													Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+												&lt;/div&gt;
+												&lt;div class=&quot;modal-footer&quot;&gt;
+													&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+													&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+							<h5 id="embed">Embedding YouTube videos</h5>
+							<p>Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a> for more information.</p>
+
+							<h4 class="subcontent-title" id="optional"><span>Optional sizes</span></h4>
+								<p>Modals have two optional sizes, available via modifier classes to be placed on a <code class="highlighter-rouge">.modal-dialog</code>. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.</p>
+								<div class="bd-example">
+									<!-- Large modal -->
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+									<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg">
+											<div class="modal-content">
+												...
+											</div>
+										</div>
+									</div>
+
+									<!-- Small modal -->
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+
+									<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content">
+												...
+											</div>
+										</div>
+									</div>
+								</div>
+								<pre class="language-markup">
+									<code class="language-markup">
+										&lt;!-- Large modal --&gt;
+										&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;.bd-example-modal-lg&quot;&gt;Large modal&lt;/button&gt;
+
+										&lt;div class=&quot;modal fade bd-example-modal-lg&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myLargeModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+											&lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+												&lt;div class=&quot;modal-content&quot;&gt;
+													...
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+
+										&lt;!-- Small modal --&gt;
+										&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;.bd-example-modal-sm&quot;&gt;Small modal&lt;/button&gt;
+
+										&lt;div class=&quot;modal fade bd-example-modal-sm&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;mySmallModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+											&lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+												&lt;div class=&quot;modal-content&quot;&gt;
+													...
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									</code>
+								</pre>
+
+								<h4 class="subcontent-title" id="usage"><span>Usage</span></h4>
+								<p>The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code class="highlighter-rouge">.modal-open</code> to the <code class="highlighter-rouge">&lt;body&gt;</code> to override default scrolling behavior and generates a <code class="highlighter-rouge">.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal.</p>
+								<h5 id="viadata">Via data attributes</h5>
+								<p>Activate a modal without writing JavaScript. Set <code class="highlighter-rouge">data-toggle="modal"</code> on a controller element, like a button, along with a <code class="highlighter-rouge">data-target="#foo"</code> or <code class="highlighter-rouge">href="#foo"</code> to target a specific modal to toggle.</p>
+								<pre class="language-markup">
+									<code class="language-markup">
+										&lt;button type=&quot;button&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Launch modal&lt;/button&gt;
+									</code>
+								</pre>
+								<h5 id="viajs">Via JavaScript</h5>
+								<p>Call a modal with id <code class="highlighter-rouge">myModal</code> with a single line of JavaScript:</p>
+								<pre class="language-javascript">
+									<code class="language-javascript">
+										$('#myModal').modal(options)
+									</code>
+								</pre>
+								<h5 id="options">Options</h5>
+								<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code class="highlighter-rouge">data-</code>, as in <code class="highlighter-rouge">data-backdrop=""</code>.</p>
+								<table class="table table-bordered table-striped table-responsive">
+									<thead>
+										<tr>
+											<th style="width: 100px;">Name</th>
+											<th style="width: 50px;">Type</th>
+											<th style="width: 50px;">Default</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>backdrop</td>
+											<td>boolean or the string <code>'static'</code></td>
+											<td>true</td>
+											<td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
+										</tr>
+										<tr>
+											<td>keyboard</td>
+											<td>boolean</td>
+											<td>true</td>
+											<td>Closes the modal when escape key is pressed</td>
+										</tr>
+										<tr>
+											<td>focus</td>
+											<td>boolean</td>
+											<td>true</td>
+											<td>Puts the focus on the modal when initialized.</td>
+										</tr>
+										<tr>
+											<td>show</td>
+											<td>boolean</td>
+											<td>true</td>
+											<td>Shows the modal when initialized.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../../assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="../../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="../../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+<script src="../../assets/js/core/popper.min.js"></script>
+<script src="../../assets/js/core/bootstrap.min.js"></script>
+<script src="../../assets/js/plugin/chart.js/chart.min.js"></script>
+<script src="../../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="../../assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/jqvmap/maps/jquery.vmap.world.js" charset="utf-8"></script>
+<script src="../../assets/js/plugin/chart-circle/circles.min.js"></script>
+<script src="../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="../../assets/js/atlantis.min.js"></script>
+<script src="../assets/prism.js"></script>
+<script src="../assets/prism-normalize-whitespace.min.js"></script>
+<script type="text/javascript">
+// Optional
+Prism.plugins.NormalizeWhitespace.setDefaults({
+	'remove-trailing': true,
+	'remove-indent': true,
+	'left-trim': true,
+	'right-trim': true,
+});
+
+// handle links with @href started with '#' only
+$(document).on('click', 'a[href^="#"]', function(e) {
+	// target element id
+	var id = $(this).attr('href');
+
+	// target element
+	var $id = $(id);
+	if ($id.length === 0) {
+		return;
+	}
+
+	// prevent standard hash navigation (avoid blinking in IE)
+	e.preventDefault();
+
+	// top position relative to the document
+	var pos = $id.offset().top - 80;
+
+	// animated top scrolling
+	$('body, html').animate({scrollTop: pos});
+});
+</script>
+</html>

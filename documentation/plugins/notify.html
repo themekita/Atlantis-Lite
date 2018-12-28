@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Notify | Atlantis Bootstrap Dashboard</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="../../assets/img/icon.ico" type="image/x-icon"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!-- Fonts and icons -->
+	<script src="../../assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../../assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/atlantis.min.css">
+	<link href="../assets/styles.css" rel="stylesheet" />
+	<link href="../assets/prism.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-header">
+			<div class="logo-header" data-background-color="light-blue2">
+				<a href="../index.html" class="logo">
+					<img src="../../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="light-blue2">
+				<div class="container-fluid">
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item">
+							<a href="../../examples/demo1" class="nav-link">
+								Live Preview
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="sidebar sidebar-style-2">
+			<div class="sidebar-background"></div>
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+					<ul class="nav nav-info">
+						<li class="nav-item">
+							<a href="../index.html">
+								<i class="fas fa-home"></i>
+								<p>Introduction</p>
+							</a>
+						</li>
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Components</h4>
+						</li>
+						<li class="nav-item">
+							<a href="../components/alerts.html">
+								<span class="letter-icon">A</span>
+								<p>Alerts</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/avatars.html">
+								<span class="letter-icon">Av</span>
+								<p>Avatars</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/badge.html">
+								<span class="letter-icon">Ba</span>
+								<p>Badge</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/breadcrumb.html">
+								<span class="letter-icon">Bc</span>
+								<p>Breadcrumb</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/buttons.html">
+								<span class="letter-icon">Bt</span>
+								<p>Buttons</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/card.html">
+								<span class="letter-icon">C</span>
+								<p>Card</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/collapse.html">
+								<span class="letter-icon">Co</span>
+								<p>Collapse</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/colors.html">
+								<span class="letter-icon">Cl</span>
+								<p>Colors</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/dropdowns.html">
+								<span class="letter-icon">D</span>
+								<p>Dropdowns</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/forms.html">
+								<span class="letter-icon">F</span>
+								<p>Forms</p>
+							</a>
+						</li>
+						<li class="nav-item">
+						<a href="../components/layoutsbackground.html">
+							<span class="letter-icon">L</span>
+							<p>Layouts Background</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/loaders.html">
+							<span class="letter-icon">Lo</span>
+							<p>Loaders</p>
+						</a>
+					</li>
+						<li class="nav-item">
+						<a href="../components/layoutsbackground.html">
+							<span class="letter-icon">L</span>
+							<p>Layouts Background</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/loaders.html">
+							<span class="letter-icon">Lo</span>
+							<p>Loaders</p>
+						</a>
+					</li>
+						<li class="nav-item">
+							<a href="../components/modal.html">
+								<span class="letter-icon">M</span>
+								<p>Modal</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/navs.html">
+								<span class="letter-icon">N</span>
+								<p>Navs</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/navbar.html">
+								<span class="letter-icon">Nb</span>
+								<p>Navbar</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/pagination.html">
+								<span class="letter-icon">Pa</span>
+								<p>Pagination</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/popovers.html">
+								<span class="letter-icon">Po</span>
+								<p>Popovers</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/progress.html">
+								<span class="letter-icon">Pr</span>
+								<p>Progress</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/tables.html">
+								<span class="letter-icon">T</span>
+								<p>Tables</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/tooltips.html">
+								<span class="letter-icon">To</span>
+								<p>Tooltips</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/typography.html">
+								<span class="letter-icon">Ty</span>
+								<p>Typography</p>
+							</a>
+						</li>
+
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Plugins</h4>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/chart.html">
+								<span class="letter-icon">C</span>
+								<p>Chart.js</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/chartcircle.html">
+								<span class="letter-icon">Cc</span>
+								<p>Chart Circle</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/animate.html">
+								<span class="letter-icon">Cs</span>
+								<p>CSS Animate</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/datatables.html">
+								<span class="letter-icon">Da</span>
+								<p>Datatables</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/jqvmap.html">
+								<span class="letter-icon">Jm</span>
+								<p>JQVmap</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/scrollbar.html">
+								<span class="letter-icon">Js</span>
+								<p>Jquery Scrollbar</p>
+							</a>
+						</li>
+						<li class="nav-item active">
+							<a href="../plugins/notify.html">
+								<span class="letter-icon">N</span>
+								<p>Notify</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/slider.html">
+								<span class="letter-icon">Sl</span>
+								<p>Slider</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/sweetalert.html">
+								<span class="letter-icon">Sa</span>
+								<p>Sweet Alert</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/sparkline.html">
+								<span class="letter-icon">Sp</span>
+								<p>Sparkline</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main-panel">
+			<div class="content content-documentation">
+				<div class="container-fluid">
+					<div class="card card-documentation">
+						<div class="card-header bg-info-gradient text-white bubble-shadow">
+							<h4>Bootstrap Notify</h4>
+							<p class="mb-0 op-8">Turn standard bootstrap alerts into "growl" like notifications from <a class="link" href="https://bootstrap-notify.remabledesigns.com/">Bootstrap Notify</a></p>
+						</div>
+						<div class="card-body">
+							<div class="table-content">
+							<span class="title">Table of Content</span>
+							<ul>
+								<li>
+									<a href="#examples">Examples</a>
+									<ol>
+										<li>
+											<a href="#basic">Basic Notify</a>
+										</li>
+										<li>
+											<a href="#full">Full List Of Options/Settings</a>
+										</li>
+									</ol>
+								</li>
+								<li>
+									<a href="#options">Options</a>
+								</li>
+								<li>
+									<a href="#settings">Settings</a>
+								</li>
+							</ul>
+						</div>
+							<h4 class="subcontent-title" id="examples">
+								<span>
+								Examples
+							</span>
+						</h4>
+							<h5 id="basic">Basic Notify</h5>
+							<div class="bd-example">
+								<button class="btn btn-info" id="example1">Show Example</button>
+							</div>
+							<pre class="language-markup">
+								<code class="language-javascript">
+									$.notify({
+	// options
+	message: 'Hello World'
+},{
+	// settings
+	type: 'danger'
+});
+						</code>
+					</pre>
+
+					<h5 id="full">Full List Of Options/Settings</h5>
+					<div class="bd-example">
+						<button class="btn btn-primary" id="example2">Show Example</button>
+					</div>
+					<pre class="language-markup">
+						<code class="language-javascript">
+							$.notify({
+	// options
+	icon: 'flaticon-alarm-1',
+	title: 'Bootstrap notify',
+	message: 'Turning standard Bootstrap alerts into "notify" like notifications',
+	url: 'https://github.com/mouse0270/bootstrap-notify',
+	target: '_blank'
+},{
+	// settings
+	element: 'body',
+	position: null,
+	type: "info",
+	allow_dismiss: true,
+	newest_on_top: false,
+	showProgressbar: false,
+	placement: {
+		from: "top",
+		align: "right"
+	},
+	offset: 20,
+	spacing: 10,
+	z_index: 1031,
+	delay: 5000,
+	timer: 1000,
+	url_target: '_blank',
+	mouse_over: null,
+	animate: {
+		enter: 'animated fadeInDown',
+		exit: 'animated fadeOutUp'
+	},
+	onShow: null,
+	onShown: null,
+	onClose: null,
+	onClosed: null,
+	icon_type: 'class',
+	template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
+	'<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+	'<span data-notify="icon"></span> ' +
+	'<span data-notify="title">{1}</span> ' +
+	'<span data-notify="message">{2}</span>' +
+	'<div class="progress" data-notify="progressbar">' +
+	'<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+	'</div>' +
+	'<a href="{3}" target="{4}" data-notify="url"></a>' +
+	'</div>' 
+});
+		</code>
+	</pre>
+
+	<h4 class="subcontent-title" id="options"><span>Options</span></h4>
+	<table class="col-xs-12 table table-bordered table-condensed">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Type / Values</th>
+				<th>Required</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td data-title="Code">icon</td>
+				<td data-title="Type / Values"><em>class</em> | <em>src</em></td>
+				<td data-title="Required"><code>No</code></td>
+				<td data-title="Description">This is the icon that will be displayed within the notify notification. This icon can either be a class (Font Icon) or an image url. Please keep in mind if you wish to use an image url that you must set icon_type to img in the options.</td>
+			</tr>
+			<tr>
+				<td data-title="Code">title</td>
+				<td data-title="Type / Values"><em>string</em></td>
+				<td data-title="Required"><code>No</code></td>
+				<td data-title="Description">This is the title that will be displayed within the notify notification. Please keep in mind unless you style the [data-notify="title"] in css this will look identical to the message.</td>
+			</tr>
+			<tr>
+				<td data-title="Code">message</td>
+				<td data-title="Type / Values"><em>string</em></td>
+				<td data-title="Required"><code>Yes</code></td>
+				<td data-title="Description">This is the message that will be displayed within the notify notification.</td>
+			</tr>
+			<tr>
+				<td data-title="Code">url</td>
+				<td data-title="Type / Values"><em>web address</em></td>
+				<td data-title="Required"><code>No</code></td>
+				<td data-title="Description">If this value is set it will make the entire notify (except the close button) a clickable area. If the user clicks on this area it will take them to the url specified here.</td>
+			</tr>
+			<tr>
+				<td data-title="Code">target</td>
+				<td data-title="Type / Values"><em>_blank</em> | <em>_self</em> | <em>_parent</em> | <em>_top</em></td>
+				<td data-title="Required"><code>no</code></td>
+				<td data-title="Description">The target attribute specifies where to open the linked notification.</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h4 class="subcontent-title" id="settings"><span>Settings</span></h4>
+	<table class="col-xs-12 table table-bordered table-condensed">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type / Values</th>
+						<th>Default</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-title="Code">element</td>
+						<td data-title="Type / Values"><em>string</em></td>
+						<td data-title="Default"><code>body</code></td>
+						<td data-title="Description">Appends the notification to a specific element. If the element is set to anything other than the body of a document it switches from a position: fixed to position: absolute.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">position</td>
+						<td data-title="Type / Values"><em>static</em> | <em>fixed</em> | <em>relative</em> | <em>absolute</em> | <em><code>null</code></em></td>
+						<td data-title="Default"><code>null</code></td>
+						<td data-title="Description">Allows users to specify a custom position to the notification container element.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">type</td>
+						<td data-title="Type / Values"><em>string</em></td>
+						<td data-title="Default"><code>info</code></td>
+						<td data-title="Description">Defines the style of the notification using bootstraps native alert styles. Please keep in mind that when the notification is generated the type gets prefixed with alert-. When using native alert styles this will not be an issue, but if you create a new style such as pink when setting up the css you have to use the class <code>alert-pink</code>.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">allow_dismiss</td>
+						<td data-title="Type / Values"><em>boolean</em></td>
+						<td data-title="Default"><code>true</code></td>
+						<td data-title="Description">If this value is set to false it will hide the <code>data-grow="dismiss"</code> element. Please keep in mind if you modify the <code>template</code> setting and do not include a <code>data-notify="dismiss"</code> element even with this set to true there will be no element for a user to click to close the notification.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">showProgressbar</td>
+						<td data-title="Type / Values"><em>boolean</em></td>
+						<td data-title="Default"><code>false</code></td>
+						<td data-title="Description">This <code>boolean</code> is used to determine if the notification should display a progress bar.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">placement.from</td>
+						<td data-title="Type / Values"><em>string</em></td>
+						<td data-title="Default"><code>top</code></td>
+						<td data-title="Description">This controls where if the notification will be placed at the <code>top</code> or <code>bottom</code> of your element.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">placement.align</td>
+						<td data-title="Type / Values"><em>string</em></td>
+						<td data-title="Default"><code>right</code></td>
+						<td data-title="Description">This controls if the notification will be placed in the <code>left</code>, <code>center</code> or <code>right</code> side of the element.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">offset</td>
+						<td data-title="Type / Values"><em>integer</em></td>
+						<td data-title="Default"><code>20</code></td>
+						<td data-title="Description">This adds padding in <code>pixels</code> between the element and the notification creating a space between their edges.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">offset.x</td>
+						<td data-title="Type / Values"><em>integer</em></td>
+						<td data-title="Default"><code>20</code></td>
+						<td data-title="Description">This adds adding on the <code>x</code> axis in <code>pixels</code> between the element and the notification creating a space between their edges.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">offset.y</td>
+						<td data-title="Type / Values"><em>integer</em></td>
+						<td data-title="Default"><code>20</code></td>
+						<td data-title="Description">This adds padding on the <code>y</code> axis in <code>pixels</code> between the element and the notification creating a space between their edges.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">spacing</td>
+						<td data-title="Type / Values"><em>integer</em></td>
+						<td data-title="Default"><code>10</code></td>
+						<td data-title="Description">This adds a padding in <code>pixels</code> between notifications with the same placement creating a space between their edges.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">z_index</td>
+						<td data-title="Type / Values"><em>integer</em></td>
+						<td data-title="Default"><code>1031</code></td>
+						<td data-title="Description">Pretty simple, this sets the css property <code>z-index</code> for the notification. You may have to raise this number if you have other elements overlapping the notification.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">delay</td>
+						<td data-title="Type / Values"><em>integer</em></td>
+						<td data-title="Default"><code>5000</code></td>
+						<td data-title="Description">If <code>delay</code> is set higher than <code>0</code> then the notification will auto-close after the <code>delay</code> period is up. Please keep in mind that delay uses milliseconds so <code>5000</code> is <code>5</code> seconds.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">timer</td>
+						<td data-title="Type / Values"><em>integer</em></td>
+						<td data-title="Default"><code>1000</code></td>
+						<td data-title="Description">This is the amount of milliseconds removed from the notify at every <code>timer</code> milliseconds. So to make that a little less confusing every <code>1000 milliseconds</code> there will be <code>1000 milliseconds</code> removed from the remaining time of the notify delay. If this is set higher then delay the notify will not be removed until timer has run out.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">url_target</td>
+						<td data-title="Type / Values"><em>_blank</em> | <em>_self</em> | <em>_parent</em> | <em>_top</em></td>
+						<td data-title="Default"><code>'_blank'</code></td>
+						<td data-title="Description">This sets the target of the url for a notification. please check <code>HTML &lt;a&gt; target Attribute</code> to learn more about these options.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">mouse_over</td>
+						<td data-title="Type / Values"><em>pause</em> | <em><code>null</code></em></td>
+						<td data-title="Default"><code>null</code></td>
+						<td data-title="Description">By default this does nothing. If you set this option to pause it will <code>pause</code> the timer on the notification delay. Since version 2.0.0 the timer will not reset it will continue from it's last tick.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">animate.enter</td>
+						<td data-title="Type / Values">string</td>
+						<td data-title="Default"><code>animated fadeInDown</code></td>
+						<td data-title="Description">This will control the animation used to bring the generate the notification on screen. Since version 2.0.0 all animations are controlled using css. This plugin is not com packaged with any animations. Please use <a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a> by <a href="https://daneden.me/" target="_blank">Daniel Eden</a> or you can always write your own css animations.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">animate.exit</td>
+						<td data-title="Type / Values">string</td>
+						<td data-title="Default"><code>animated fadeOutUp</code></td>
+						<td data-title="Description">This will control the animation used to bring the generate the notification on screen. Since version 2.0.0 all animations are controlled using css. This plugin is not com packaged with any animations. Please use <a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a> by <a href="https://daneden.me/" target="_blank">Daniel Eden</a> or you can always write your own css animations.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">onShow</td>
+						<td data-title="Type / Values">function</td>
+						<td data-title="Default"><code>null</code></td>
+						<td data-title="Description">This event fires immediately when the <code>show</code> instance method is called.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">onShow</td>
+						<td data-title="Type / Values">function</td>
+						<td data-title="Default"><code>null</code></td>
+						<td data-title="Description">This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete).</td>
+					</tr>
+					<tr>
+						<td data-title="Code">onClose</td>
+						<td data-title="Type / Values">function</td>
+						<td data-title="Default"><code>null</code></td>
+						<td data-title="Description">This event is fired immediately when the notification is <code>closing</code>.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">onClosed</td>
+						<td data-title="Type / Values">function</td>
+						<td data-title="Default"><code>null</code></td>
+						<td data-title="Description">his event is fired when the modal has finished closing and is removed from the document (will wait for CSS transitions to complete).</td>
+					</tr>
+					<tr>
+						<td data-title="Code">icon_type</td>
+						<td data-title="Type / Values">string</td>
+						<td data-title="Default"><code>class</code></td>
+						<td data-title="Description">This is used to let the plugin know if you are using an <code>icon font</code> for images or if you are using <code>image</code>. If this setting is not set to <code>class</code> it will assume you are using an <code>img</code>. Please keep in mind if you are using an <code>image</code> you to set <code>icon</code> to the <code>src</code> of the <code>image</code>.</td>
+					</tr>
+					<tr>
+						<td data-title="Code">template</td>
+						<td data-title="Type / Values">HTML</td>
+						<td data-title="Default"><code>code below</code></td>
+						<td data-title="Description">Since version 3.0.0 the template option has been revamped in hopes of giving users more control over the layout. Please find the code for the default template below.</td>
+					</tr>
+				</tbody>
+			</table>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+<script src="../../assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="../../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="../../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+<script src="../../assets/js/core/popper.min.js"></script>
+<script src="../../assets/js/core/bootstrap.min.js"></script>
+<script src="../../assets/js/plugin/chart.js/chart.min.js"></script>
+<script src="../../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="../../assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/jqvmap/maps/jquery.vmap.world.js" charset="utf-8"></script>
+<script src="../../assets/js/plugin/chart-circle/circles.min.js"></script>
+<script src="../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="../../assets/js/atlantis.min.js"></script>
+<script src="../assets/prism.js"></script>
+<script src="../assets/prism-normalize-whitespace.min.js"></script>
+<script type="text/javascript">
+	// Optional
+	Prism.plugins.NormalizeWhitespace.setDefaults({
+		'remove-trailing': true,
+		'remove-indent': true,
+		'left-trim': true,
+		'right-trim': true,
+	});
+	
+	// handle links with @href started with '#' only
+	$(document).on('click', 'a[href^="#"]', function(e) {
+		// target element id
+		var id = $(this).attr('href');
+
+		// target element
+		var $id = $(id);
+		if ($id.length === 0) {
+			return;
+		}
+
+		// prevent standard hash navigation (avoid blinking in IE)
+		e.preventDefault();
+
+		// top position relative to the document
+		var pos = $id.offset().top - 80;
+
+		// animated top scrolling
+		$('body, html').animate({scrollTop: pos});
+	});
+</script>
+<script>
+	$('#example1').on('click',function(){
+		$.notify({
+			// options
+			message: 'Hello World'
+		},{
+			// settings
+			type: 'info', 
+			delay: 100000
+		});
+	});
+
+	$('#example2').on('click', function(){
+		$.notify({
+			// options
+			icon: 'flaticon-alarm-1',
+			title: 'Bootstrap notify',
+			message: 'Turning standard Bootstrap alerts into "notify" like notifications',
+			url: 'https://github.com/mouse0270/bootstrap-notify',
+			target: '_blank'
+		},{
+			// settings
+			element: 'body',
+			position: null,
+			type: "info",
+			allow_dismiss: true,
+			newest_on_top: false,
+			showProgressbar: false,
+			placement: {
+				from: "top",
+				align: "right"
+			},
+			offset: 20,
+			spacing: 10,
+			z_index: 1031,
+			delay: 5000,
+			timer: 1000,
+			url_target: '_blank',
+			mouse_over: null,
+			animate: {
+				enter: 'animated fadeInDown',
+				exit: 'animated fadeOutUp'
+			},
+			onShow: null,
+			onShown: null,
+			onClose: null,
+			onClosed: null,
+			icon_type: 'class',
+			template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
+			'<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+			'<span data-notify="icon"></span> ' +
+			'<span data-notify="title">{1}</span> ' +
+			'<span data-notify="message">{2}</span>' +
+			'<div class="progress" data-notify="progressbar">' +
+			'<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+			'</div>' +
+			'<a href="{3}" target="{4}" data-notify="url"></a>' +
+			'</div>' 
+		});
+	})
+</script>
+</html>

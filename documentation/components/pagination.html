@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Pagination | Atlantis Bootstrap Dashboard</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="../../assets/img/icon.ico" type="image/x-icon"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!-- Fonts and icons -->
+	<script src="../../assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../../assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/atlantis.min.css">
+	<link href="../assets/styles.css" rel="stylesheet" />
+	<link href="../assets/prism.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-header">
+			<div class="logo-header" data-background-color="light-blue2">
+				<a href="../index.html" class="logo">
+					<img src="../../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="light-blue2">
+				<div class="container-fluid">
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item">
+							<a href="../../examples/demo1" class="nav-link">
+								Live Preview
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="sidebar sidebar-style-2">
+			<div class="sidebar-background"></div>
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+					<ul class="nav nav-info">
+						<li class="nav-item">
+							<a href="../index.html">
+								<i class="fas fa-home"></i>
+								<p>Introduction</p>
+							</a>
+						</li>
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Components</h4>
+						</li>
+						<li class="nav-item">
+							<a href="../components/alerts.html">
+								<span class="letter-icon">A</span>
+								<p>Alerts</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/avatars.html">
+								<span class="letter-icon">Av</span>
+								<p>Avatars</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/badge.html">
+								<span class="letter-icon">Ba</span>
+								<p>Badge</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/breadcrumb.html">
+								<span class="letter-icon">Bc</span>
+								<p>Breadcrumb</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/buttons.html">
+								<span class="letter-icon">Bt</span>
+								<p>Buttons</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/card.html">
+								<span class="letter-icon">C</span>
+								<p>Card</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/collapse.html">
+								<span class="letter-icon">Co</span>
+								<p>Collapse</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/colors.html">
+								<span class="letter-icon">Cl</span>
+								<p>Colors</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/dropdowns.html">
+								<span class="letter-icon">D</span>
+								<p>Dropdowns</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/forms.html">
+								<span class="letter-icon">F</span>
+								<p>Forms</p>
+							</a>
+						</li>
+						<li class="nav-item">
+						<a href="../components/layoutsbackground.html">
+							<span class="letter-icon">L</span>
+							<p>Layouts Background</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/loaders.html">
+							<span class="letter-icon">Lo</span>
+							<p>Loaders</p>
+						</a>
+					</li>
+						<li class="nav-item">
+							<a href="../components/modal.html">
+								<span class="letter-icon">M</span>
+								<p>Modal</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/navs.html">
+								<span class="letter-icon">N</span>
+								<p>Navs</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/navbar.html">
+								<span class="letter-icon">Nb</span>
+								<p>Navbar</p>
+							</a>
+						</li>
+						<li class="nav-item active">
+							<a href="../components/pagination.html">
+								<span class="letter-icon">Pa</span>
+								<p>Pagination</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/popovers.html">
+								<span class="letter-icon">Po</span>
+								<p>Popovers</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/progress.html">
+								<span class="letter-icon">Pr</span>
+								<p>Progress</p>
+							</a>
+						</li>
+						
+						<li class="nav-item">
+							<a href="../components/tables.html">
+								<span class="letter-icon">T</span>
+								<p>Tables</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/tooltips.html">
+								<span class="letter-icon">To</span>
+								<p>Tooltips</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/typography.html">
+								<span class="letter-icon">Ty</span>
+								<p>Typography</p>
+							</a>
+						</li>
+
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Plugins</h4>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/chart.html">
+								<span class="letter-icon">C</span>
+								<p>Chart.js</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/chartcircle.html">
+								<span class="letter-icon">Cc</span>
+								<p>Chart Circle</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/animate.html">
+								<span class="letter-icon">Cs</span>
+								<p>CSS Animate</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/datatables.html">
+								<span class="letter-icon">Da</span>
+								<p>Datatables</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/jqvmap.html">
+								<span class="letter-icon">Jm</span>
+								<p>JQVmap</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/scrollbar.html">
+								<span class="letter-icon">Js</span>
+								<p>Jquery Scrollbar</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/notify.html">
+								<span class="letter-icon">N</span>
+								<p>Notify</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/slider.html">
+								<span class="letter-icon">Sl</span>
+								<p>Slider</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/sweetalert.html">
+								<span class="letter-icon">Sa</span>
+								<p>Sweet Alert</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/sparkline.html">
+								<span class="letter-icon">Sp</span>
+								<p>Sparkline</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main-panel">
+			<div class="content content-documentation">
+				<div class="container-fluid">
+					<div class="card card-documentation">
+						<div class="card-header bg-info-gradient text-white bubble-shadow">
+							<h4>Pagination</h4>
+							<p class="mb-0 op-8">Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.</p>
+						</div>
+						<div class="card-body">
+							<div class="table-content">
+								<span class="title">Table of Contents</span>
+								<ul>
+									<li>
+										<a href="#example">Example</a>
+									</li>
+									<li>
+										<a href="#icons">Working with icons</a>
+									</li>
+									<li>
+										<a href="#disabled">
+											Disabled and active states
+										</a>
+									</li>
+									<li>
+										<a href="#alignment">
+											Alignment
+										</a>
+									</li>
+								</ul>
+							</div>
+							<h4 class="subcontent-title" id="example"><span>Example</span></h4>
+							<div class="bd-example">
+								<nav aria-label="Page navigation example">
+									<ul class="pagination mb-0">
+										<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+										<li class="page-item"><a class="page-link" href="#">1</a></li>
+										<li class="page-item"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item"><a class="page-link" href="#">Next</a></li>
+									</ul>
+								</nav>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+										&lt;ul class=&quot;pagination&quot;&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/nav&gt;
+								</code>
+							</pre>
+
+							<h4 class="subcontent-title" id="icons"><span>Working with icons</span></h4>
+							<p>Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with <code class="highlighter-rouge">aria</code> attributes and the <code class="highlighter-rouge">.sr-only</code> utility.</p>
+							<div class="bd-example">
+								<nav aria-label="Page navigation example">
+									<ul class="pagination mb-0">
+										<li class="page-item">
+											<a class="page-link" href="#" aria-label="Previous">
+												<span aria-hidden="true">«</span>
+												<span class="sr-only">Previous</span>
+											</a>
+										</li>
+										<li class="page-item"><a class="page-link" href="#">1</a></li>
+										<li class="page-item"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item">
+											<a class="page-link" href="#" aria-label="Next">
+												<span aria-hidden="true">»</span>
+												<span class="sr-only">Next</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+										&lt;ul class=&quot;pagination&quot;&gt;
+											&lt;li class=&quot;page-item&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;
+													&lt;span aria-hidden=&quot;true&quot;&gt;&#171;&lt;/span&gt;
+													&lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+												&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+													&lt;span aria-hidden=&quot;true&quot;&gt;&#187;&lt;/span&gt;
+													&lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+												&lt;/a&gt;
+											&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/nav&gt;
+								</code>
+							</pre>
+
+							<h4 class="subcontent-title" id="disabled"><span>Disabled and active states</span></h4>
+							<p>Pagination links are customizable for different circumstances. Use <code class="highlighter-rouge">.disabled</code> for links that appear un-clickable and <code class="highlighter-rouge">.active</code> to indicate the current page.</p>
+							<p>While the <code class="highlighter-rouge">.disabled</code> class uses <code class="highlighter-rouge">pointer-events: none</code> to <em>try</em> to disable the link functionality of <code class="highlighter-rouge">&lt;a&gt;</code>s, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add <code class="highlighter-rouge">tabindex="-1"</code> on disabled links and use custom JavaScript to fully disable their functionality.</p>
+							<div class="bd-example">
+								<nav aria-label="...">
+									<ul class="pagination mb-0">
+										<li class="page-item disabled">
+											<a class="page-link" href="#" tabindex="-1">Previous</a>
+										</li>
+										<li class="page-item"><a class="page-link" href="#">1</a></li>
+										<li class="page-item active">
+											<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+										</li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item">
+											<a class="page-link" href="#">Next</a>
+										</li>
+									</ul>
+								</nav>
+
+								<nav aria-label="..." class="mt-3">
+									<ul class="pagination pg-secondary mb-0">
+										<li class="page-item disabled">
+											<a class="page-link" href="#" tabindex="-1">Previous</a>
+										</li>
+										<li class="page-item active">
+											<a class="page-link" href="#">1  <span class="sr-only">(current)</span></a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">2</a>
+										</li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item">
+											<a class="page-link" href="#">Next</a>
+										</li>
+									</ul>
+								</nav>
+
+								<nav aria-label="..." class="mt-3">
+									<ul class="pagination pg-warning mb-0">
+										<li class="page-item">
+											<a class="page-link" href="#" tabindex="-1">Previous</a>
+										</li>
+										<li class="page-item"><a class="page-link" href="#">1</a></li>
+										<li class="page-item ">
+											<a class="page-link" href="#">2</a>
+										</li>
+										<li class="page-item active"><a class="page-link" href="#">3 <span class="sr-only">(current)</span></a></li>
+										<li class="page-item">
+											<a class="page-link" href="#">Next</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;nav aria-label=&quot;...&quot;&gt;
+										&lt;ul class=&quot;pagination mb-0&quot;&gt;
+											&lt;li class=&quot;page-item disabled&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot;&gt;Previous&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item active&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2 &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+											&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/nav&gt;
+
+									&lt;nav aria-label=&quot;...&quot;&gt;
+										&lt;ul class=&quot;pagination pg-secondary mb-0&quot;&gt;
+											&lt;li class=&quot;page-item disabled&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot;&gt;Previous&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;page-item active&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1  &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+											&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/nav&gt;
+
+									&lt;nav aria-label=&quot;...&quot;&gt;
+										&lt;ul class=&quot;pagination pg-warning mb-0&quot;&gt;
+											&lt;li class=&quot;page-item&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot;&gt;Previous&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item &quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3 &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+											&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/nav&gt;
+								</code>
+							</pre>
+							<p>You can optionally swap out active or disabled anchors for <code class="highlighter-rouge">&lt;span&gt;</code>, or omit the anchor in the case of the prev/next arrows, to remove click functionality and prevent keyboard focus while retaining intended styles.</p>
+							<div class="bd-example">
+								<nav aria-label="...">
+									<ul class="pagination mb-0">
+										<li class="page-item disabled">
+											<span class="page-link">Previous</span>
+										</li>
+										<li class="page-item"><a class="page-link" href="#">1</a></li>
+										<li class="page-item active">
+											<span class="page-link">
+												2
+												<span class="sr-only">(current)</span>
+											</span>
+										</li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item">
+											<a class="page-link" href="#">Next</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;nav aria-label=&quot;...&quot;&gt;
+										&lt;ul class=&quot;pagination&quot;&gt;
+											&lt;li class=&quot;page-item disabled&quot;&gt;
+												&lt;span class=&quot;page-link&quot;&gt;Previous&lt;/span&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item active&quot;&gt;
+												&lt;span class=&quot;page-link&quot;&gt;
+												2
+												&lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;
+												&lt;/span&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+											&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/nav&gt;
+								</code>
+							</pre>
+
+							<h4 class="subcontent-title" id="alignment"><span>Alignment</span></h4>
+							<p>Change the alignment of pagination components with <a href="/docs/4.0/utilities/flex/">flexbox utilities</a>.</p>
+							<div class="bd-example">
+								<nav aria-label="Page navigation example">
+									<ul class="pagination justify-content-center mb-0">
+										<li class="page-item disabled">
+											<a class="page-link" href="#" tabindex="-1">Previous</a>
+										</li>
+										<li class="page-item"><a class="page-link" href="#">1</a></li>
+										<li class="page-item"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item">
+											<a class="page-link" href="#">Next</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+										&lt;ul class=&quot;pagination justify-content-center&quot;&gt;
+											&lt;li class=&quot;page-item disabled&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot;&gt;Previous&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+											&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/nav&gt;
+								</code>
+							</pre>
+							<div class="bd-example">
+								<nav aria-label="Page navigation example">
+									<ul class="pagination justify-content-end mb-0">
+										<li class="page-item disabled">
+											<a class="page-link" href="#" tabindex="-1">Previous</a>
+										</li>
+										<li class="page-item"><a class="page-link" href="#">1</a></li>
+										<li class="page-item"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item">
+											<a class="page-link" href="#">Next</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+										&lt;ul class=&quot;pagination justify-content-end&quot;&gt;
+											&lt;li class=&quot;page-item disabled&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot;&gt;Previous&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+											&lt;li class=&quot;page-item&quot;&gt;
+												&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+											&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/nav&gt;
+								</code>
+							</pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+<script src="../../assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="../../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="../../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+<script src="../../assets/js/core/popper.min.js"></script>
+<script src="../../assets/js/core/bootstrap.min.js"></script>
+<script src="../../assets/js/plugin/chart.js/chart.min.js"></script>
+<script src="../../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="../../assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/jqvmap/maps/jquery.vmap.world.js" charset="utf-8"></script>
+<script src="../../assets/js/plugin/chart-circle/circles.min.js"></script>
+<script src="../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="../../assets/js/atlantis.min.js"></script>
+<script src="../assets/prism.js"></script>
+<script src="../assets/prism-normalize-whitespace.min.js"></script>
+<script type="text/javascript">
+	// Optional
+	Prism.plugins.NormalizeWhitespace.setDefaults({
+		'remove-trailing': true,
+		'remove-indent': true,
+		'left-trim': true,
+		'right-trim': true,
+	});
+	
+	// handle links with @href started with '#' only
+	$(document).on('click', 'a[href^="#"]', function(e) {
+		// target element id
+		var id = $(this).attr('href');
+
+		// target element
+		var $id = $(id);
+		if ($id.length === 0) {
+			return;
+		}
+
+		// prevent standard hash navigation (avoid blinking in IE)
+		e.preventDefault();
+
+		// top position relative to the document
+		var pos = $id.offset().top - 80;
+
+		// animated top scrolling
+		$('body, html').animate({scrollTop: pos});
+	});
+</script>
+</html>

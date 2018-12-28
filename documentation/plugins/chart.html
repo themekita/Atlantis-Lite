@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Chart.js | Atlantis Bootstrap Dashboard</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="../../assets/img/icon.ico" type="image/x-icon"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+	WebFont.load({
+		google: {"families":["Open+Sans:300,400,600,700"]},
+		custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: ['../../assets/css/fonts.css']},
+		active: function() {
+			sessionStorage.fonts = true;
+		}
+	});
+</script>
+
+<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../assets/css/atlantis.min.css">
+<link href="../assets/styles.css" rel="stylesheet" />
+<link href="../assets/prism.css" rel="stylesheet" />
+</head>
+<body>
+<div class="wrapper">
+	
+		<div class="main-header">
+			<div class="logo-header" data-background-color="light-blue2">
+				<a href="../index.html" class="logo">
+					<img src="../../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="light-blue2">
+				<div class="container-fluid">
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item">
+							<a href="../../examples/demo1" class="nav-link">
+								Live Preview
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	<div class="sidebar sidebar-style-2">
+		<div class="sidebar-background"></div>
+		<div class="sidebar-wrapper scrollbar scrollbar-inner">
+			<div class="sidebar-content">
+				<ul class="nav nav-info">
+					<li class="nav-item">
+						<a href="../index.html">
+							<i class="flaticon-home"></i>
+							<p>Introduction</p>
+						</a>
+					</li>
+					<li class="nav-section">
+						<span class="sidebar-mini-icon">
+							<i class="fa fa-ellipsis-h"></i>
+						</span>
+						<h4 class="text-section">Components</h4>
+					</li>
+					<li class="nav-item">
+						<a href="../components/alerts.html">
+							<span class="letter-icon">A</span>
+							<p>Alerts</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/avatars.html">
+							<span class="letter-icon">Av</span>
+							<p>Avatars</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/badge.html">
+							<span class="letter-icon">Ba</span>
+							<p>Badge</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/breadcrumb.html">
+							<span class="letter-icon">Bc</span>
+							<p>Breadcrumb</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/buttons.html">
+							<span class="letter-icon">Bt</span>
+							<p>Buttons</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/card.html">
+							<span class="letter-icon">C</span>
+							<p>Card</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/collapse.html">
+							<span class="letter-icon">Co</span>
+							<p>Collapse</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/colors.html">
+							<span class="letter-icon">Cl</span>
+							<p>Colors</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/dropdowns.html">
+							<span class="letter-icon">D</span>
+							<p>Dropdowns</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/forms.html">
+							<span class="letter-icon">F</span>
+							<p>Forms</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/layoutsbackground.html">
+							<span class="letter-icon">L</span>
+							<p>Layouts Background</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/loaders.html">
+							<span class="letter-icon">Lo</span>
+							<p>Loaders</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/modal.html">
+							<span class="letter-icon">M</span>
+							<p>Modal</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/navs.html">
+							<span class="letter-icon">N</span>
+							<p>Navs</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/navbar.html">
+							<span class="letter-icon">Nb</span>
+							<p>Navbar</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/pagination.html">
+							<span class="letter-icon">Pa</span>
+							<p>Pagination</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/popovers.html">
+							<span class="letter-icon">Po</span>
+							<p>Popovers</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/progress.html">
+							<span class="letter-icon">Pr</span>
+							<p>Progress</p>
+						</a>
+					</li>
+					
+					<li class="nav-item">
+						<a href="../components/tables.html">
+							<span class="letter-icon">T</span>
+							<p>Tables</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/tooltips.html">
+							<span class="letter-icon">To</span>
+							<p>Tooltips</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/typography.html">
+							<span class="letter-icon">Ty</span>
+							<p>Typography</p>
+						</a>
+					</li>
+
+					<li class="nav-section">
+						<span class="sidebar-mini-icon">
+							<i class="fa fa-ellipsis-h"></i>
+						</span>
+						<h4 class="text-section">Plugins</h4>
+					</li>
+					<li class="nav-item active">
+						<a href="../plugins/chart.html">
+							<span class="letter-icon">C</span>
+							<p>Chart.js</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/chartcircle.html">
+							<span class="letter-icon">Cc</span>
+							<p>Chart Circle</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/animate.html">
+							<span class="letter-icon">Cs</span>
+							<p>CSS Animate</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/datatables.html">
+							<span class="letter-icon">Da</span>
+							<p>Datatables</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/datetimepicker.html">
+							<span class="letter-icon">Dp</span>
+							<p>DatetimePicker</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/dropzone.html">
+							<span class="letter-icon">Dr</span>
+							<p>Dropzone</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/fullcalendar.html">
+							<span class="letter-icon">F</span>
+							<p>Fullcalendar</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/gmaps.html">
+							<span class="letter-icon">G</span>
+							<p>Google Maps</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/jqvmap.html">
+							<span class="letter-icon">Jm</span>
+							<p>JQVmap</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/listjs.html">
+							<span class="letter-icon">L</span>
+							<p>List.Js</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/jquery-validation.html">
+							<span class="letter-icon">Jv</span>
+							<p>Jquery Validation</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/scrollbar.html">
+							<span class="letter-icon">Js</span>
+							<p>Jquery Scrollbar</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/notify.html">
+							<span class="letter-icon">N</span>
+							<p>Notify</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/select2.html">
+							<span class="letter-icon">Se</span>
+							<p>Select2</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/slider.html">
+							<span class="letter-icon">Sl</span>
+							<p>Slider</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/summernote.html">
+							<span class="letter-icon">Su</span>
+							<p>Summernote</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/sweetalert.html">
+							<span class="letter-icon">Sa</span>
+							<p>Sweet Alert</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/sparkline.html">
+							<span class="letter-icon">Sp</span>
+							<p>Sparkline</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/switch.html">
+							<span class="letter-icon">Sw</span>
+							<p>Switch</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../plugins/tagsinput.html">
+							<span class="letter-icon">T</span>
+							<p>Tagsinput</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="main-panel">
+		<div class="content content-documentation">
+			<div class="container-fluid">
+				<div class="card card-documentation">
+					<div class="card-header bg-info-gradient text-white bubble-shadow">
+						<h4>Chart Js</h4>
+						<p class="mb-0 op-8">Simple yet flexible JavaScript charting for designers &amp; developers. Please checkout their <a href="https://www.chartjs.org/" target="_blank">Full Documentation</a>.</p>
+					</div>
+					<div class="card-body">
+						<div class="table-content">
+							<span class="title">Table of Contents</span>
+							<ul>
+								<li>
+									<a href="#examples">Examples</a>
+									<ol>
+										<li>
+											<a href="#line">Line Chart</a>
+										</li>
+										<li>
+											<a href="#bar">Bar Chart</a>
+										</li>
+										<li>
+											<a href="#pie">Pie Chart</a>
+										</li>
+										<li>
+											<a href="#doughnut">Doughnut Chart</a>
+										</li>
+										<li>
+											<a href="#radar">Radar Chart</a>
+										</li>
+										<li>
+											<a href="#bubble">Bubble Chart</a>
+										</li>
+										<li>
+											<a href="#multipleline">Multiple Line Chart</a>
+										</li>
+										<li>
+											<a href="#multiplebar">Multiple Bar Chart</a>
+										</li>
+										<li>
+											<a href="#legends">Chart with HTML Legends</a>
+										</li>
+									</ol>
+								</li>
+							</ul>
+						</div>
+						<h4 class="subcontent-title" id="examples"><span>Examples</span></h4>
+						<h5 id="line">Line Chart</h5>
+						<div class="bd-example">
+							<div id="chart-container">
+								<canvas id="lineChart"></canvas>
+							</div>
+						</div>
+						<pre class="language-markup">
+							<code class="language-markup">
+								&lt;div id=&quot;chart-container&quot;&gt;
+									&lt;canvas id=&quot;LineChart&quot;&gt;&lt;/canvas&gt;
+								&lt;/div&gt;
+							</code>
+						</pre>
+						<pre class="language-markup">
+							<code class="language-javascript">
+								var lineChart = document.getElementById('lineChart').getContext('2d');
+
+var myLineChart = new Chart(lineChart, {
+	type: 'line',
+	data: {
+		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		datasets: [{
+			label: "Active Users",
+			borderColor: "#1d7af3",
+			pointBorderColor: "#FFF",
+			pointBackgroundColor: "#1d7af3",
+			pointBorderWidth: 2,
+			pointHoverRadius: 4,
+			pointHoverBorderWidth: 1,
+			pointRadius: 4,
+			backgroundColor: 'transparent',
+			fill: true,
+			borderWidth: 2,
+			data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 900]
+		}]
+	},
+	options : {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			position: 'bottom',
+			labels : {
+				padding: 10,
+				fontColor: '#1d7af3',
+			}
+		},
+		tooltips: {
+			bodySpacing: 4,
+			mode:"nearest",
+			intersect: 0,
+			position:"nearest",
+			xPadding:10,
+			yPadding:10,
+			caretPadding:10
+		},
+		layout:{
+			padding:{left:15,right:15,top:15,bottom:15}
+		}
+	}
+});
+</code>
+</pre>
+
+<h5 id="bar">Bar Chart</h5>
+<div class="bd-example">
+<div id="chart-container">
+	<canvas id="barChart"></canvas>
+</div>
+</div>
+<pre class="language-markup">
+<code class="language-markup">
+	&lt;div id=&quot;chart-container&quot;&gt;
+		&lt;canvas id=&quot;barChart&quot;&gt;&lt;/canvas&gt;
+	&lt;/div&gt;
+</code>
+</pre>
+<pre class="language-markup">
+<code class="language-javascript">
+
+var barChart = document.getElementById('barChart').getContext('2d');
+
+var myBarChart = new Chart(barChart, {
+	type: 'bar',
+	data: {
+		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		datasets : [{
+			label: "Sales",
+			backgroundColor: 'rgb(23, 125, 255)',
+			borderColor: 'rgb(23, 125, 255)',
+			data: [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4],
+		}],
+	},
+	options: {
+		responsive: true, 
+		maintainAspectRatio: false,
+		scales: {
+			yAxes: [{
+				ticks: {
+					beginAtZero:true
+				}
+			}]
+		},
+	}
+});
+</code>
+</pre>
+
+<h5 id="pie">Pie Chart</h5>
+<div class="bd-example">
+<div id="chart-container">
+	<canvas id="pieChart" style="width: 50%; height: 50%"></canvas>
+</div>
+</div>
+<pre class="language-markup">
+<code class="language-markup">
+	&lt;div id=&quot;chart-container&quot;&gt;
+		&lt;canvas id=&quot;pieChart&quot;&gt;&lt;/canvas&gt;
+	&lt;/div&gt;
+</code>
+</pre>
+<pre class="language-markup">
+<code class="language-javascript">
+
+var pieChart = document.getElementById('pieChart').getContext('2d');
+
+var myPieChart = new Chart(pieChart, {
+	type: 'pie',
+	data: {
+		datasets: [{
+			data: [50, 35, 15],
+			backgroundColor :["#1d7af3","#f3545d","#fdaf4b"],
+			borderWidth: 0
+		}],
+		labels: ['New Visitors', 'Subscribers', 'Active Users'] 
+	},
+	options : {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			position : 'bottom',
+			labels : {
+				fontColor: 'rgb(154, 154, 154)',
+				fontSize: 11,
+				usePointStyle : true,
+				padding: 20
+			}
+		},
+		pieceLabel: {
+			render: 'percentage',
+			fontColor: 'white',
+			fontSize: 14,
+		},
+		tooltips: false,
+		layout: {
+			padding: {
+				left: 20,
+				right: 20,
+				top: 20,
+				bottom: 20
+			}
+		}
+	}
+})
+</code>
+</pre>
+
+<h5 id="doughnut">Doughnut Chart</h5>
+<div class="bd-example">
+<div id="chart-container">
+	<canvas id="doughnutChart" style="width: 50%; height: 50%"></canvas>
+</div>
+</div>
+<pre class="language-markup">
+<code class="language-markup">
+	&lt;div id=&quot;chart-container&quot;&gt;
+		&lt;canvas id=&quot;doughnutChart&quot;&gt;&lt;/canvas&gt;
+	&lt;/div&gt;
+</code>
+</pre>
+<pre class="language-markup">
+<code class="language-javascript">
+	var doughnutChart = document.getElementById('doughnutChart').getContext('2d');
+
+var myDoughnutChart = new Chart(doughnutChart, {
+	type: 'doughnut',
+	data: {
+		datasets: [{
+			data: [10, 20, 30],
+			backgroundColor: ['#f3545d','#fdaf4b','#1d7af3']
+		}],
+
+		labels: [
+		'Red',
+		'Yellow',
+		'Blue'
+		]
+	},
+	options: {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend : {
+			position: 'bottom'
+		},
+		layout: {
+			padding: {
+				left: 20,
+				right: 20,
+				top: 20,
+				bottom: 20
+			}
+		}
+	}
+});
+</code>
+</pre>
+
+<h5 id="radar">Radar Chart</h5>
+<div class="bd-example">
+<div id="chart-container">
+	<canvas id="radarChart"></canvas>
+</div>
+</div>
+<pre class="language-markup">
+<code class="language-markup">
+	&lt;div id=&quot;chart-container&quot;&gt;
+		&lt;canvas id=&quot;radarChart&quot;&gt;&lt;/canvas&gt;
+	&lt;/div&gt;
+</code>
+</pre>
+<pre class="language-markup">
+<code class="language-javascript">
+
+var radarChart = document.getElementById('radarChart').getContext('2d');
+
+var myRadarChart = new Chart(radarChart, {
+	type: 'radar',
+	data: {
+		labels: ['Running', 'Swimming', 'Eating', 'Cycling', 'Jumping'],
+		datasets: [{
+			data: [20, 10, 30, 2, 30],
+			borderColor: '#1d7af3',
+			backgroundColor : 'rgba(29, 122, 243, 0.25)',
+			pointBackgroundColor: "#1d7af3",
+			pointHoverRadius: 4,
+			pointRadius: 3,
+			label: 'Team 1'
+		}, {
+			data: [10, 20, 15, 30, 22],
+			borderColor: '#716aca',
+			backgroundColor: 'rgba(113, 106, 202, 0.25)',
+			pointBackgroundColor: "#716aca",
+			pointHoverRadius: 4,
+			pointRadius: 3,
+			label: 'Team 2'
+		},
+		]
+	},
+	options : {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend : {
+			position: 'bottom'
+		}
+	}
+});
+</code>
+</pre>
+
+<h5 id="bubble">Bubble Chart</h5>
+<div class="bd-example">
+<div id="chart-container">
+	<canvas id="bubbleChart"></canvas>
+</div>
+</div>
+<pre class="language-markup">
+<code class="language-markup">
+	&lt;div id=&quot;chart-container&quot;&gt;
+		&lt;canvas id=&quot;bubbleChart&quot;&gt;&lt;/canvas&gt;
+	&lt;/div&gt;
+</code>
+</pre>
+<pre class="language-markup">
+<code class="language-javascript">
+
+var bubbleChart = document.getElementById('bubbleChart').getContext('2d');
+
+var myBubbleChart = new Chart(bubbleChart,{
+	type: 'bubble',
+	data: {
+		datasets:[{
+			label: "Car", 
+			data:[{x:25,y:17,r:25},{x:30,y:25,r:28}, {x:35,y:30,r:8}], 
+			backgroundColor:"#716aca"
+		},
+		{
+			label: "Motorcycles", 
+			data:[{x:10,y:17,r:20},{x:30,y:10,r:7}, {x:35,y:20,r:10}], 
+			backgroundColor:"#1d7af3"
+		}],
+	},
+	options: {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			position: 'bottom'
+		},
+		scales: {
+			yAxes: [{
+				ticks: {
+					beginAtZero:true
+				}
+			}],
+			xAxes: [{
+				ticks: {
+					beginAtZero:true
+				}
+			}]
+		},
+	}
+});
+</code>
+</pre>
+
+<h5 id="multipleline">Multiple Line Chart</h5>
+<div class="bd-example">
+<div id="chart-container">
+	<canvas id="multipleLineChart"></canvas>
+</div>
+</div>
+<pre class="language-markup">
+<code class="language-markup">
+	&lt;div id=&quot;chart-container&quot;&gt;
+		&lt;canvas id=&quot;multipleLineChart&quot;&gt;&lt;/canvas&gt;
+	&lt;/div&gt;
+</code>
+</pre>
+<pre class="language-markup">
+<code class="language-javascript">
+
+var multipleLineChart = document.getElementById('multipleLineChart').getContext('2d');
+
+var myMultipleLineChart = new Chart(multipleLineChart, {
+	type: 'line',
+	data: {
+		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		datasets: [{
+			label: "Python",
+			borderColor: "#1d7af3",
+			pointBorderColor: "#FFF",
+			pointBackgroundColor: "#1d7af3",
+			pointBorderWidth: 2,
+			pointHoverRadius: 4,
+			pointHoverBorderWidth: 1,
+			pointRadius: 4,
+			backgroundColor: 'transparent',
+			fill: true,
+			borderWidth: 2,
+			data: [30, 45, 45, 68, 69, 90, 100, 158, 177, 200, 245, 256]
+		},{
+			label: "PHP",
+			borderColor: "#59d05d",
+			pointBorderColor: "#FFF",
+			pointBackgroundColor: "#59d05d",
+			pointBorderWidth: 2,
+			pointHoverRadius: 4,
+			pointHoverBorderWidth: 1,
+			pointRadius: 4,
+			backgroundColor: 'transparent',
+			fill: true,
+			borderWidth: 2,
+			data: [10, 20, 55, 75, 80, 48, 59, 55, 23, 107, 60, 87]
+		}, {
+			label: "Ruby",
+			borderColor: "#f3545d",
+			pointBorderColor: "#FFF",
+			pointBackgroundColor: "#f3545d",
+			pointBorderWidth: 2,
+			pointHoverRadius: 4,
+			pointHoverBorderWidth: 1,
+			pointRadius: 4,
+			backgroundColor: 'transparent',
+			fill: true,
+			borderWidth: 2,
+			data: [10, 30, 58, 79, 90, 105, 117, 160, 185, 210, 185, 194]
+		}]
+	},
+	options : {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			position: 'top',
+		},
+		tooltips: {
+			bodySpacing: 4,
+			mode:"nearest",
+			intersect: 0,
+			position:"nearest",
+			xPadding:10,
+			yPadding:10,
+			caretPadding:10
+		},
+		layout:{
+			padding:{left:15,right:15,top:15,bottom:15}
+		}
+	}
+});
+</code>
+</pre>
+
+<h5 id="multiplebar">Multiple Bar Chart</h5>
+<div class="bd-example">
+<div id="chart-container">
+	<canvas id="multipleBarChart"></canvas>
+</div>
+</div>
+<pre class="language-markup">
+<code class="language-markup">
+	&lt;div id=&quot;chart-container&quot;&gt;
+		&lt;canvas id=&quot;multipleBarChart&quot;&gt;&lt;/canvas&gt;
+	&lt;/div&gt;
+</code>
+</pre>
+<pre class="language-markup">
+<code class="language-javascript">
+
+var multipleBarChart = document.getElementById('multipleBarChart').getContext('2d');
+
+var myMultipleBarChart = new Chart(multipleBarChart, {
+	type: 'bar',
+	data: {
+		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		datasets : [{
+			label: "First time visitors",
+			backgroundColor: '#59d05d',
+			borderColor: '#59d05d',
+			data: [95, 100, 112, 101, 144, 159, 178, 156, 188, 190, 210, 245],
+		},{
+			label: "Visitors",
+			backgroundColor: '#fdaf4b',
+			borderColor: '#fdaf4b',
+			data: [145, 256, 244, 233, 210, 279, 287, 253, 287, 299, 312,356],
+		}, {
+			label: "Pageview",
+			backgroundColor: '#177dff',
+			borderColor: '#177dff',
+			data: [185, 279, 273, 287, 234, 312, 322, 286, 301, 320, 346, 399],
+		}],
+	},
+	options: {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			position : 'bottom'
+		},
+		title: {
+			display: true,
+			text: 'Traffic Stats'
+		},
+		tooltips: {
+			mode: 'index',
+			intersect: false
+		},
+		responsive: true,
+		scales: {
+			xAxes: [{
+				stacked: true,
+			}],
+			yAxes: [{
+				stacked: true
+			}]
+		}
+	}
+});
+</code>
+</pre>
+
+<h5 id="legends">Chart with HTML Legends</h5>
+<div class="bd-example">
+<div id="chart-container">
+	<canvas id="htmlLegendsChart"></canvas>
+</div>
+<div id="myChartLegend"></div>
+</div>
+<pre class="language-markup">
+<code class="language-markup">
+	&lt;div id=&quot;chart-container&quot;&gt;
+		&lt;canvas id=&quot;htmlLegendsChart&quot;&gt;&lt;/canvas&gt;
+	&lt;/div&gt;
+	&lt;div id=&quot;myChartLegend&quot;&gt;&lt;/div&gt;
+</code>
+</pre>
+<pre class="language-markup">
+<code class="language-javascript">
+
+var htmlLegendsChart = document.getElementById('htmlLegendsChart').getContext('2d');
+
+// Chart with HTML Legends
+
+var gradientStroke = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+gradientStroke.addColorStop(0, '#177dff');
+gradientStroke.addColorStop(1, '#80b6f4');
+
+var gradientFill = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+gradientFill.addColorStop(0, "rgba(23, 125, 255, 0.7)");
+gradientFill.addColorStop(1, "rgba(128, 182, 244, 0.3)");
+
+var gradientStroke2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+gradientStroke2.addColorStop(0, '#f3545d');
+gradientStroke2.addColorStop(1, '#ff8990');
+
+var gradientFill2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+gradientFill2.addColorStop(0, "rgba(243, 84, 93, 0.7)");
+gradientFill2.addColorStop(1, "rgba(255, 137, 144, 0.3)");
+
+var gradientStroke3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+gradientStroke3.addColorStop(0, '#fdaf4b');
+gradientStroke3.addColorStop(1, '#ffc478');
+
+var gradientFill3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+gradientFill3.addColorStop(0, "rgba(253, 175, 75, 0.7)");
+gradientFill3.addColorStop(1, "rgba(255, 196, 120, 0.3)");
+
+var myHtmlLegendsChart = new Chart(htmlLegendsChart, {
+	type: 'line',
+	data: {
+		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		datasets: [ {
+			label: "Subscribers",
+			borderColor: gradientStroke2,
+			pointBackgroundColor: gradientStroke2,
+			pointRadius: 0,
+			backgroundColor: gradientFill2,
+			legendColor: '#f3545d',
+			fill: true,
+			borderWidth: 1,
+			data: [154, 184, 175, 203, 210, 231, 240, 278, 252, 312, 320, 374]
+		}, {
+			label: "New Visitors",
+			borderColor: gradientStroke3,
+			pointBackgroundColor: gradientStroke3,
+			pointRadius: 0,
+			backgroundColor: gradientFill3,
+			legendColor: '#fdaf4b',
+			fill: true,
+			borderWidth: 1,
+			data: [256, 230, 245, 287, 240, 250, 230, 295, 331, 431, 456, 521]
+		}, {
+			label: "Active Users",
+			borderColor: gradientStroke,
+			pointBackgroundColor: gradientStroke,
+			pointRadius: 0,
+			backgroundColor: gradientFill,
+			legendColor: '#177dff',
+			fill: true,
+			borderWidth: 1,
+			data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 900]
+		}]
+	},
+	options : {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			display: false
+		},
+		tooltips: {
+			bodySpacing: 4,
+			mode:"nearest",
+			intersect: 0,
+			position:"nearest",
+			xPadding:10,
+			yPadding:10,
+			caretPadding:10
+		},
+		layout:{
+			padding:{left:15,right:15,top:15,bottom:15}
+		},
+		scales: {
+			yAxes: [{
+				ticks: {
+					fontColor: "rgba(0,0,0,0.5)",
+					fontStyle: "500",
+					beginAtZero: false,
+					maxTicksLimit: 5,
+					padding: 20
+				},
+				gridLines: {
+					drawTicks: false,
+					display: false
+				}
+			}],
+			xAxes: [{
+				gridLines: {
+					zeroLineColor: "transparent"
+				},
+				ticks: {
+					padding: 20,
+					fontColor: "rgba(0,0,0,0.5)",
+					fontStyle: "500"
+				}
+			}]
+		}, 
+		legendCallback: function(chart) { 
+			var text = []; 
+			text.push('<ul class="' + chart.id + '-legend html-legend">'); 
+			for (var i = 0; i < chart.data.datasets.length; i++) { 
+				text.push('<li><span style="background-color:' + chart.data.datasets[i].legendColor + '"></span>'); 
+				if (chart.data.datasets[i].label) { 
+					text.push(chart.data.datasets[i].label); 
+				} 
+				text.push('</li>'); 
+			} 
+			text.push('</ul>'); 
+			return text.join(''); 
+		}  
+	}
+});
+
+var myLegendContainer = document.getElementById("myChartLegend");
+
+// generate HTML legend
+myLegendContainer.innerHTML = myHtmlLegendsChart.generateLegend();
+
+// bind onClick event to all LI-tags of the legend
+var legendItems = myLegendContainer.getElementsByTagName('li');
+for (var i = 0; i < legendItems.length; i += 1) {
+	legendItems[i].addEventListener("click", legendClickCallback, false);
+}
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script src="../../assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="../../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="../../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+<script src="../../assets/js/core/popper.min.js"></script>
+<script src="../../assets/js/core/bootstrap.min.js"></script>
+<script src="../../assets/js/plugin/chart.js/chart.min.js"></script>
+<script src="../../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="../../assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/jqvmap/maps/jquery.vmap.world.js" charset="utf-8"></script>
+<script src="../../assets/js/plugin/chart-circle/circles.min.js"></script>
+<script src="../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="../../assets/js/atlantis.min.js"></script>
+<script src="../assets/prism.js"></script>
+<script src="../assets/prism-normalize-whitespace.min.js"></script>
+<script type="text/javascript">
+// Optional
+Prism.plugins.NormalizeWhitespace.setDefaults({
+	'remove-trailing': true,
+	'remove-indent': true,
+	'left-trim': true,
+	'right-trim': true,
+});
+
+// handle links with @href started with '#' only
+$(document).on('click', 'a[href^="#"]', function(e) {
+	// target element id
+	var id = $(this).attr('href');
+
+	// target element
+	var $id = $(id);
+	if ($id.length === 0) {
+		return;
+	}
+
+	// prevent standard hash navigation (avoid blinking in IE)
+	e.preventDefault();
+
+	// top position relative to the document
+	var pos = $id.offset().top - 80;
+
+	// animated top scrolling
+	$('body, html').animate({scrollTop: pos});
+});
+</script>
+<script>
+var lineChart = document.getElementById('lineChart').getContext('2d'),
+barChart = document.getElementById('barChart').getContext('2d'),
+pieChart = document.getElementById('pieChart').getContext('2d'),
+doughnutChart = document.getElementById('doughnutChart').getContext('2d'),
+radarChart = document.getElementById('radarChart').getContext('2d'),
+bubbleChart = document.getElementById('bubbleChart').getContext('2d'),
+multipleLineChart = document.getElementById('multipleLineChart').getContext('2d'),
+multipleBarChart = document.getElementById('multipleBarChart').getContext('2d'),
+htmlLegendsChart = document.getElementById('htmlLegendsChart').getContext('2d');
+
+var myLineChart = new Chart(lineChart, {
+	type: 'line',
+	data: {
+		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		datasets: [{
+			label: "Active Users",
+			borderColor: "#1d7af3",
+			pointBorderColor: "#FFF",
+			pointBackgroundColor: "#1d7af3",
+			pointBorderWidth: 2,
+			pointHoverRadius: 4,
+			pointHoverBorderWidth: 1,
+			pointRadius: 4,
+			backgroundColor: 'transparent',
+			fill: true,
+			borderWidth: 2,
+			data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 900]
+		}]
+	},
+	options : {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			position: 'bottom',
+			labels : {
+				padding: 10,
+				fontColor: '#1d7af3',
+			}
+		},
+		tooltips: {
+			bodySpacing: 4,
+			mode:"nearest",
+			intersect: 0,
+			position:"nearest",
+			xPadding:10,
+			yPadding:10,
+			caretPadding:10
+		},
+		layout:{
+			padding:{left:15,right:15,top:15,bottom:15}
+		}
+	}
+});
+
+var myBarChart = new Chart(barChart, {
+	type: 'bar',
+	data: {
+		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		datasets : [{
+			label: "Sales",
+			backgroundColor: 'rgb(23, 125, 255)',
+			borderColor: 'rgb(23, 125, 255)',
+			data: [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4],
+		}],
+	},
+	options: {
+		responsive: true, 
+		maintainAspectRatio: false,
+		scales: {
+			yAxes: [{
+				ticks: {
+					beginAtZero:true
+				}
+			}]
+		},
+	}
+});
+
+var myPieChart = new Chart(pieChart, {
+	type: 'pie',
+	data: {
+		datasets: [{
+			data: [50, 35, 15],
+			backgroundColor :["#1d7af3","#f3545d","#fdaf4b"],
+			borderWidth: 0
+		}],
+		labels: ['New Visitors', 'Subscribers', 'Active Users'] 
+	},
+	options : {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			position : 'bottom',
+			labels : {
+				fontColor: 'rgb(154, 154, 154)',
+				fontSize: 11,
+				usePointStyle : true,
+				padding: 20
+			}
+		},
+		pieceLabel: {
+			render: 'percentage',
+			fontColor: 'white',
+			fontSize: 14,
+		},
+		tooltips: false,
+		layout: {
+			padding: {
+				left: 20,
+				right: 20,
+				top: 20,
+				bottom: 20
+			}
+		}
+	}
+})
+
+var myDoughnutChart = new Chart(doughnutChart, {
+	type: 'doughnut',
+	data: {
+		datasets: [{
+			data: [10, 20, 30],
+			backgroundColor: ['#f3545d','#fdaf4b','#1d7af3']
+		}],
+
+		labels: [
+		'Red',
+		'Yellow',
+		'Blue'
+		]
+	},
+	options: {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend : {
+			position: 'bottom'
+		},
+		layout: {
+			padding: {
+				left: 20,
+				right: 20,
+				top: 20,
+				bottom: 20
+			}
+		}
+	}
+});
+
+var myRadarChart = new Chart(radarChart, {
+	type: 'radar',
+	data: {
+		labels: ['Running', 'Swimming', 'Eating', 'Cycling', 'Jumping'],
+		datasets: [{
+			data: [20, 10, 30, 2, 30],
+			borderColor: '#1d7af3',
+			backgroundColor : 'rgba(29, 122, 243, 0.25)',
+			pointBackgroundColor: "#1d7af3",
+			pointHoverRadius: 4,
+			pointRadius: 3,
+			label: 'Team 1'
+		}, {
+			data: [10, 20, 15, 30, 22],
+			borderColor: '#716aca',
+			backgroundColor: 'rgba(113, 106, 202, 0.25)',
+			pointBackgroundColor: "#716aca",
+			pointHoverRadius: 4,
+			pointRadius: 3,
+			label: 'Team 2'
+		},
+		]
+	},
+	options : {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend : {
+			position: 'bottom'
+		}
+	}
+});
+
+var myBubbleChart = new Chart(bubbleChart,{
+	type: 'bubble',
+	data: {
+		datasets:[{
+			label: "Car", 
+			data:[{x:25,y:17,r:25},{x:30,y:25,r:28}, {x:35,y:30,r:8}], 
+			backgroundColor:"#716aca"
+		},
+		{
+			label: "Motorcycles", 
+			data:[{x:10,y:17,r:20},{x:30,y:10,r:7}, {x:35,y:20,r:10}], 
+			backgroundColor:"#1d7af3"
+		}],
+	},
+	options: {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			position: 'bottom'
+		},
+		scales: {
+			yAxes: [{
+				ticks: {
+					beginAtZero:true
+				}
+			}],
+			xAxes: [{
+				ticks: {
+					beginAtZero:true
+				}
+			}]
+		},
+	}
+});
+
+var myMultipleLineChart = new Chart(multipleLineChart, {
+	type: 'line',
+	data: {
+		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		datasets: [{
+			label: "Python",
+			borderColor: "#1d7af3",
+			pointBorderColor: "#FFF",
+			pointBackgroundColor: "#1d7af3",
+			pointBorderWidth: 2,
+			pointHoverRadius: 4,
+			pointHoverBorderWidth: 1,
+			pointRadius: 4,
+			backgroundColor: 'transparent',
+			fill: true,
+			borderWidth: 2,
+			data: [30, 45, 45, 68, 69, 90, 100, 158, 177, 200, 245, 256]
+		},{
+			label: "PHP",
+			borderColor: "#59d05d",
+			pointBorderColor: "#FFF",
+			pointBackgroundColor: "#59d05d",
+			pointBorderWidth: 2,
+			pointHoverRadius: 4,
+			pointHoverBorderWidth: 1,
+			pointRadius: 4,
+			backgroundColor: 'transparent',
+			fill: true,
+			borderWidth: 2,
+			data: [10, 20, 55, 75, 80, 48, 59, 55, 23, 107, 60, 87]
+		}, {
+			label: "Ruby",
+			borderColor: "#f3545d",
+			pointBorderColor: "#FFF",
+			pointBackgroundColor: "#f3545d",
+			pointBorderWidth: 2,
+			pointHoverRadius: 4,
+			pointHoverBorderWidth: 1,
+			pointRadius: 4,
+			backgroundColor: 'transparent',
+			fill: true,
+			borderWidth: 2,
+			data: [10, 30, 58, 79, 90, 105, 117, 160, 185, 210, 185, 194]
+		}]
+	},
+	options : {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			position: 'top',
+		},
+		tooltips: {
+			bodySpacing: 4,
+			mode:"nearest",
+			intersect: 0,
+			position:"nearest",
+			xPadding:10,
+			yPadding:10,
+			caretPadding:10
+		},
+		layout:{
+			padding:{left:15,right:15,top:15,bottom:15}
+		}
+	}
+});
+
+var myMultipleBarChart = new Chart(multipleBarChart, {
+	type: 'bar',
+	data: {
+		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		datasets : [{
+			label: "First time visitors",
+			backgroundColor: '#59d05d',
+			borderColor: '#59d05d',
+			data: [95, 100, 112, 101, 144, 159, 178, 156, 188, 190, 210, 245],
+		},{
+			label: "Visitors",
+			backgroundColor: '#fdaf4b',
+			borderColor: '#fdaf4b',
+			data: [145, 256, 244, 233, 210, 279, 287, 253, 287, 299, 312,356],
+		}, {
+			label: "Pageview",
+			backgroundColor: '#177dff',
+			borderColor: '#177dff',
+			data: [185, 279, 273, 287, 234, 312, 322, 286, 301, 320, 346, 399],
+		}],
+	},
+	options: {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			position : 'bottom'
+		},
+		title: {
+			display: true,
+			text: 'Traffic Stats'
+		},
+		tooltips: {
+			mode: 'index',
+			intersect: false
+		},
+		responsive: true,
+		scales: {
+			xAxes: [{
+				stacked: true,
+			}],
+			yAxes: [{
+				stacked: true
+			}]
+		}
+	}
+});
+
+// Chart with HTML Legends
+
+var gradientStroke = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+gradientStroke.addColorStop(0, '#177dff');
+gradientStroke.addColorStop(1, '#80b6f4');
+
+var gradientFill = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+gradientFill.addColorStop(0, "rgba(23, 125, 255, 0.7)");
+gradientFill.addColorStop(1, "rgba(128, 182, 244, 0.3)");
+
+var gradientStroke2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+gradientStroke2.addColorStop(0, '#f3545d');
+gradientStroke2.addColorStop(1, '#ff8990');
+
+var gradientFill2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+gradientFill2.addColorStop(0, "rgba(243, 84, 93, 0.7)");
+gradientFill2.addColorStop(1, "rgba(255, 137, 144, 0.3)");
+
+var gradientStroke3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+gradientStroke3.addColorStop(0, '#fdaf4b');
+gradientStroke3.addColorStop(1, '#ffc478');
+
+var gradientFill3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+gradientFill3.addColorStop(0, "rgba(253, 175, 75, 0.7)");
+gradientFill3.addColorStop(1, "rgba(255, 196, 120, 0.3)");
+
+var myHtmlLegendsChart = new Chart(htmlLegendsChart, {
+	type: 'line',
+	data: {
+		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		datasets: [ {
+			label: "Subscribers",
+			borderColor: gradientStroke2,
+			pointBackgroundColor: gradientStroke2,
+			pointRadius: 0,
+			backgroundColor: gradientFill2,
+			legendColor: '#f3545d',
+			fill: true,
+			borderWidth: 1,
+			data: [154, 184, 175, 203, 210, 231, 240, 278, 252, 312, 320, 374]
+		}, {
+			label: "New Visitors",
+			borderColor: gradientStroke3,
+			pointBackgroundColor: gradientStroke3,
+			pointRadius: 0,
+			backgroundColor: gradientFill3,
+			legendColor: '#fdaf4b',
+			fill: true,
+			borderWidth: 1,
+			data: [256, 230, 245, 287, 240, 250, 230, 295, 331, 431, 456, 521]
+		}, {
+			label: "Active Users",
+			borderColor: gradientStroke,
+			pointBackgroundColor: gradientStroke,
+			pointRadius: 0,
+			backgroundColor: gradientFill,
+			legendColor: '#177dff',
+			fill: true,
+			borderWidth: 1,
+			data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 900]
+		}]
+	},
+	options : {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			display: false
+		},
+		tooltips: {
+			bodySpacing: 4,
+			mode:"nearest",
+			intersect: 0,
+			position:"nearest",
+			xPadding:10,
+			yPadding:10,
+			caretPadding:10
+		},
+		layout:{
+			padding:{left:15,right:15,top:15,bottom:15}
+		},
+		scales: {
+			yAxes: [{
+				ticks: {
+					fontColor: "rgba(0,0,0,0.5)",
+					fontStyle: "500",
+					beginAtZero: false,
+					maxTicksLimit: 5,
+					padding: 20
+				},
+				gridLines: {
+					drawTicks: false,
+					display: false
+				}
+			}],
+			xAxes: [{
+				gridLines: {
+					zeroLineColor: "transparent"
+				},
+				ticks: {
+					padding: 20,
+					fontColor: "rgba(0,0,0,0.5)",
+					fontStyle: "500"
+				}
+			}]
+		}, 
+		legendCallback: function(chart) { 
+			var text = []; 
+			text.push('<ul class="' + chart.id + '-legend html-legend">'); 
+			for (var i = 0; i < chart.data.datasets.length; i++) { 
+				text.push('<li><span style="background-color:' + chart.data.datasets[i].legendColor + '"></span>'); 
+				if (chart.data.datasets[i].label) { 
+					text.push(chart.data.datasets[i].label); 
+				} 
+				text.push('</li>'); 
+			} 
+			text.push('</ul>'); 
+			return text.join(''); 
+		}  
+	}
+});
+
+var myLegendContainer = document.getElementById("myChartLegend");
+
+// generate HTML legend
+myLegendContainer.innerHTML = myHtmlLegendsChart.generateLegend();
+
+// bind onClick event to all LI-tags of the legend
+var legendItems = myLegendContainer.getElementsByTagName('li');
+for (var i = 0; i < legendItems.length; i += 1) {
+	legendItems[i].addEventListener("click", legendClickCallback, false);
+}
+</script>
+</html>

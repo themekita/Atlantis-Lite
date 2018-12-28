@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Card | Atlantis Bootstrap Dashboard</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="../../assets/img/icon.ico" type="image/x-icon"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!-- Fonts and icons -->
+	<script src="../../assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../../assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/atlantis.min.css">
+	<link href="../assets/styles.css" rel="stylesheet" />
+	<link href="../assets/prism.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-header">
+			<div class="logo-header" data-background-color="light-blue2">
+				<a href="../index.html" class="logo">
+					<img src="../../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="light-blue2">
+				<div class="container-fluid">
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item">
+							<a href="../../examples/demo1" class="nav-link">
+								Live Preview
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="sidebar sidebar-style-2">
+			<div class="sidebar-background"></div>
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+					<ul class="nav nav-info">
+						<li class="nav-item">
+							<a href="../index.html">
+								<i class="fas fa-home"></i>
+								<p>Introduction</p>
+							</a>
+						</li>
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Components</h4>
+						</li>
+						<li class="nav-item">
+							<a href="../components/alerts.html">
+								<span class="letter-icon">A</span>
+								<p>Alerts</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/avatars.html">
+								<span class="letter-icon">Av</span>
+								<p>Avatars</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/badge.html">
+								<span class="letter-icon">Ba</span>
+								<p>Badge</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/breadcrumb.html">
+								<span class="letter-icon">Bc</span>
+								<p>Breadcrumb</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/buttons.html">
+								<span class="letter-icon">Bt</span>
+								<p>Buttons</p>
+							</a>
+						</li>
+						<li class="nav-item active">
+							<a href="../components/card.html">
+								<span class="letter-icon">C</span>
+								<p>Card</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/collapse.html">
+								<span class="letter-icon">Co</span>
+								<p>Collapse</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/colors.html">
+								<span class="letter-icon">Cl</span>
+								<p>Colors</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/dropdowns.html">
+								<span class="letter-icon">D</span>
+								<p>Dropdowns</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/forms.html">
+								<span class="letter-icon">F</span>
+								<p>Forms</p>
+							</a>
+						</li>
+						<li class="nav-item">
+						<a href="../components/layoutsbackground.html">
+							<span class="letter-icon">L</span>
+							<p>Layouts Background</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../components/loaders.html">
+							<span class="letter-icon">Lo</span>
+							<p>Loaders</p>
+						</a>
+					</li>
+						<li class="nav-item">
+							<a href="../components/modal.html">
+								<span class="letter-icon">M</span>
+								<p>Modal</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/navs.html">
+								<span class="letter-icon">N</span>
+								<p>Navs</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/navbar.html">
+								<span class="letter-icon">Nb</span>
+								<p>Navbar</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/pagination.html">
+								<span class="letter-icon">Pa</span>
+								<p>Pagination</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/popovers.html">
+								<span class="letter-icon">Po</span>
+								<p>Popovers</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/progress.html">
+								<span class="letter-icon">Pr</span>
+								<p>Progress</p>
+							</a>
+						</li>
+						
+						<li class="nav-item">
+							<a href="../components/tables.html">
+								<span class="letter-icon">T</span>
+								<p>Tables</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/tooltips.html">
+								<span class="letter-icon">To</span>
+								<p>Tooltips</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../components/typography.html">
+								<span class="letter-icon">Ty</span>
+								<p>Typography</p>
+							</a>
+						</li>
+
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Plugins</h4>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/chart.html">
+								<span class="letter-icon">C</span>
+								<p>Chart.js</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/chartcircle.html">
+								<span class="letter-icon">Cc</span>
+								<p>Chart Circle</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/animate.html">
+								<span class="letter-icon">Cs</span>
+								<p>CSS Animate</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/datatables.html">
+								<span class="letter-icon">Da</span>
+								<p>Datatables</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/jqvmap.html">
+								<span class="letter-icon">Jm</span>
+								<p>JQVmap</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/scrollbar.html">
+								<span class="letter-icon">Js</span>
+								<p>Jquery Scrollbar</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/notify.html">
+								<span class="letter-icon">N</span>
+								<p>Notify</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/slider.html">
+								<span class="letter-icon">Sl</span>
+								<p>Slider</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/sweetalert.html">
+								<span class="letter-icon">Sa</span>
+								<p>Sweet Alert</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="../plugins/sparkline.html">
+								<span class="letter-icon">Sp</span>
+								<p>Sparkline</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main-panel">
+			<div class="content content-documentation">
+				<div class="container-fluid">
+					<div class="card card-documentation">
+						<div class="card-header bg-info-gradient text-white bubble-shadow">
+							<h4>Card</h4>
+							<p class="mb-0 op-8">Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.</p>
+						</div>
+						<div class="card-body">
+							<div class="table-content">
+								<span class="title">Table of Content</span>
+								<ul>
+									<li>
+										<a href="#examples">Examples</a>
+									</li>
+									<li>
+										<a href="#content">
+											Content types
+										</a>
+										<ol>
+											<li>
+												<a href="#body">Body</a>
+											</li>
+											<li>
+												<a href="#titles">
+													Titles, text, and links
+												</a>
+											</li>
+											<li>
+												<a href="#images">
+													Images
+												</a>
+											</li>
+											<li>
+												<a href="#listgroup">
+													List groups
+												</a>
+											</li>
+											<li>
+												<a href="#kitchensink">
+													Kitchen sink
+												</a>
+											</li>
+											<li>
+												<a href="#header">
+													Header and footer
+												</a>
+											</li>
+										</ol>
+									</li>
+									<li>
+										<a href="#textalignment">
+											Text alignment
+										</a>
+									</li>
+									<li>
+										<a href="#navigation">
+											Navigation
+										</a>
+									</li>
+									<li>
+										<a href="#images2">
+											Images
+										</a>
+										<ol>
+											<li>
+												<a href="#overlay">Image Overlay</a>
+											</li>
+										</ol>
+									</li>
+								</ul>
+							</div>
+							<h4 class="subcontent-title" id="examples"><span>Examples</span></h4>
+							<p>Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various sizing options.</p>
+							<div class="bd-example">
+								<div class="card" style="width: 18rem;">
+									<img class="card-img-top" src="https://via.placeholder.com/325x215" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title mb-2 fw-mediumbold">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-warning">Go somewhere</a>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+										&lt;img class=&quot;card-img-top&quot; src=&quot;...&quot; alt=&quot;Card image cap&quot;&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;h5 class=&quot;card-title mb-2 fw-mediumbold&quot;&gt;Card title&lt;/h5&gt;
+											&lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+											&lt;a href=&quot;#&quot; class=&quot;btn btn-warning&quot;&gt;Go somewhere&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<h4 class="subcontent-title" id="content"><span>Content types</span></h4>
+							<p>Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported.</p>
+							<h5 id="body">Body</h5>
+							<p>The building block of a card is the <code class="highlighter-rouge">.card-body</code>. Use it whenever you need a padded section within a card.</p>
+							<div class="bd-example">
+								<div class="card">
+									<div class="card-body">
+										This is some text within a card body.
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card&quot;&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											This is some text within a card body.
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<h5 id="titles">Titles, text, and links</h5>
+							<p>Card titles are used by adding <code class="highlighter-rouge">.card-title</code> to a <code class="highlighter-rouge">&lt;h*&gt;</code> tag. In the same way, links are added and placed next to each other by adding <code class="highlighter-rouge">.card-link</code> to an <code class="highlighter-rouge">&lt;a&gt;</code> tag.</p>
+							<p>Subtitles are used by adding a <code class="highlighter-rouge">.card-subtitle</code> to a <code class="highlighter-rouge">&lt;h*&gt;</code> tag. If the <code class="highlighter-rouge">.card-title</code> and the <code class="highlighter-rouge">.card-subtitle</code> items are placed in a <code class="highlighter-rouge">.card-body</code> item, the card title and subtitle are aligned nicely.</p>
+							<div class="bd-example">
+								<div class="card" style="width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title mb-3">Card title</h5>
+										<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="card-link">Card link</a>
+										<a href="#" class="card-link">Another link</a>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card-body&quot;&gt;
+										&lt;h5 class=&quot;card-title mb-3&quot;&gt;Card title&lt;/h5&gt;
+										&lt;h6 class=&quot;card-subtitle mb-2 text-muted&quot;&gt;Card subtitle&lt;/h6&gt;
+										&lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+										&lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
+										&lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+							<h5 id="images">Images</h5>
+							<p><code class="highlighter-rouge">.card-img-top</code> places an image to the top of the card. With <code class="highlighter-rouge">.card-text</code>, text can be added to the card. Text within <code class="highlighter-rouge">.card-text</code> can also be styled with the standard HTML tags.</p>
+							<div class="bd-example">
+								<div class="card" style="width: 18rem;">
+									<img class="card-img-top" src="https://via.placeholder.com/325x215" alt="Card image cap">
+									<div class="card-body">
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+										&lt;img class=&quot;card-img-top&quot; src=&quot;../../assets/img/blogpost.jpg&quot; alt=&quot;Card image cap&quot;&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<h5 id="listgroup">List groups</h5>
+							<p>Create lists of content in a card with a flush list group.</p>
+							<div class="bd-example">
+								<div class="card" style="width: 18rem;">
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">Cras justo odio</li>
+										<li class="list-group-item">Dapibus ac facilisis in</li>
+										<li class="list-group-item">Vestibulum at eros</li>
+									</ul>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+										&lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+											&lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+											&lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+											&lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<div class="bd-example">
+								<div class="card" style="width: 18rem;">
+									<div class="card-header">
+										Featured
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">Cras justo odio</li>
+										<li class="list-group-item">Dapibus ac facilisis in</li>
+										<li class="list-group-item">Vestibulum at eros</li>
+									</ul>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+										&lt;div class=&quot;card-header&quot;&gt;
+											Featured
+										&lt;/div&gt;
+										&lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+											&lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+											&lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+											&lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<h5 id="kitchensink">Kitchen sink</h5>
+							<p>Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.</p>
+							<div class="bd-example">
+								<div class="card" style="width: 18rem;">
+									<img class="card-img-top" src="https://via.placeholder.com/325x215" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">Cras justo odio</li>
+										<li class="list-group-item">Dapibus ac facilisis in</li>
+										<li class="list-group-item">Vestibulum at eros</li>
+									</ul>
+									<div class="card-body">
+										<a href="#" class="card-link">Card link</a>
+										<a href="#" class="card-link">Another link</a>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+										&lt;img class=&quot;card-img-top&quot; src=&quot;../../assets/img/blogpost.jpg&quot; alt=&quot;Card image cap&quot;&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+											&lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+										&lt;/div&gt;
+										&lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+											&lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+											&lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+											&lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+										&lt;/ul&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
+											&lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<h5 id="header">Header and footer</h5>
+							<p>Add an optional header and/or footer within a card.</p>
+							<div class="bd-example">
+								<div class="card">
+									<div class="card-header">
+										Featured
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Special title treatment</h5>
+										<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card&quot;&gt;
+										&lt;div class=&quot;card-header&quot;&gt;
+											Featured
+										&lt;/div&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+											&lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+											&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+							<p>Card headers can be styled by adding <code class="highlighter-rouge">.card-header</code> to <code class="highlighter-rouge">&lt;h*&gt;</code> elements.</p>
+							<div class="bd-example">
+								<div class="card">
+									<h5 class="card-header">Featured</h5>
+									<div class="card-body">
+										<h5 class="card-title">Special title treatment</h5>
+										<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card&quot;&gt;
+										&lt;h5 class=&quot;card-header&quot;&gt;Featured&lt;/h5&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+											&lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+											&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<div class="bd-example">
+								<div class="card">
+									<div class="card-header">
+										Quote
+									</div>
+									<div class="card-body">
+										<blockquote class="blockquote mb-0">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+											<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card&quot;&gt;
+										&lt;div class=&quot;card-header&quot;&gt;
+											Quote
+										&lt;/div&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;blockquote class=&quot;blockquote mb-0&quot;&gt;
+											&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+											&lt;footer class=&quot;blockquote-footer&quot;&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+											&lt;/blockquote&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<div class="bd-example">
+								<div class="card text-center">
+									<div class="card-header">
+										Featured
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Special title treatment</h5>
+										<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+									<div class="card-footer text-muted">
+										2 days ago
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card text-center&quot;&gt;
+										&lt;div class=&quot;card-header&quot;&gt;
+											Featured
+										&lt;/div&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+											&lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+											&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+										&lt;/div&gt;
+										&lt;div class=&quot;card-footer text-muted&quot;&gt;
+											2 days ago
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<h4 class="subcontent-title" id="textalignment"><span>Text alignment</span></h4>
+							<p>You can quickly change the text alignment of any card—in its entirety or specific parts—with our text align classes.</p>
+							<div class="bd-example">
+								<div class="card" style="width: 20rem;">
+									<div class="card-body">
+										<h4 class="card-title">Special title treatment</h4>
+										<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+
+								<div class="card text-center" style="width: 20rem;">
+									<div class="card-body">
+										<h4 class="card-title">Special title treatment</h4>
+										<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+
+								<div class="card text-right" style="width: 20rem;">
+									<div class="card-body">
+										<h4 class="card-title">Special title treatment</h4>
+										<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card&quot; style=&quot;width: 20rem;&quot;&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;h4 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h4&gt;
+											&lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+											&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+
+									&lt;div class=&quot;card text-center&quot; style=&quot;width: 20rem;&quot;&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;h4 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h4&gt;
+											&lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+											&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+
+									&lt;div class=&quot;card text-right&quot; style=&quot;width: 20rem;&quot;&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;h4 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h4&gt;
+											&lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+											&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<h4 class="subcontent-title" id="navigation"><span>Navigation</span></h4>
+							<p>Add some navigation to a card’s header (or block) with Bootstrap’s nav components.</p>
+							<div class="bd-example">
+								<div class="card text-center">
+									<div class="card-header">
+										<ul class="nav nav-tabs card-header-tabs">
+											<li class="nav-item">
+												<a class="nav-link active" href="#">Active</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Link</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link disabled" href="#">Disabled</a>
+											</li>
+										</ul>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Special title treatment</h5>
+										<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card text-center&quot;&gt;
+										&lt;div class=&quot;card-header&quot;&gt;
+											&lt;ul class=&quot;nav nav-tabs card-header-tabs&quot;&gt;
+												&lt;li class=&quot;nav-item&quot;&gt;
+												&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
+												&lt;/li&gt;
+												&lt;li class=&quot;nav-item&quot;&gt;
+												&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+												&lt;/li&gt;
+												&lt;li class=&quot;nav-item&quot;&gt;
+												&lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot;&gt;Disabled&lt;/a&gt;
+												&lt;/li&gt;
+											&lt;/ul&gt;
+										&lt;/div&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+											&lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+											&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+							<div class="bd-example">
+								<div class="card text-center">
+									<div class="card-header">
+										<ul class="nav nav-pills nav-primary card-header-pills">
+											<li class="nav-item">
+												<a class="nav-link active" href="#">Active</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Link</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link disabled" href="#">Disabled</a>
+											</li>
+										</ul>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Special title treatment</h5>
+										<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card text-center&quot;&gt;
+										&lt;div class=&quot;card-header&quot;&gt;
+										&lt;ul class=&quot;nav nav-pills nav-primary card-header-pills&quot;&gt;
+											&lt;li class=&quot;nav-item&quot;&gt;
+											&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;nav-item&quot;&gt;
+											&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;nav-item&quot;&gt;
+											&lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot;&gt;Disabled&lt;/a&gt;
+											&lt;/li&gt;
+										&lt;/ul&gt;
+										&lt;/div&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+											&lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+											&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<h4 class="subcontent-title" id="images2"><span>Images</span></h4>
+							<p>Cards include a few options for working with images. Choose from appending “image caps” at either end of a card, overlaying images with card content, or simply embedding the image in a card.</p>
+							<h5>Image caps</h5>
+							<p>Similar to headers and footers, cards can include top and bottom “image caps”—images at the top or bottom of a card.</p>
+							<div class="bd-example">
+								<div class="card mb-3">
+									<img class="card-img-top" src="https://via.placeholder.com/780x180" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+										<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+										<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+									</div>
+									<img class="card-img-bottom" src="https://via.placeholder.com/780x180" alt="Card image cap">
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card mb-3&quot;&gt;
+										&lt;img class=&quot;card-img-top&quot; src=&quot;https://via.placeholder.com/780x180&quot; alt=&quot;Card image cap&quot;&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+											&lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+											&lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+									
+									&lt;div class=&quot;card&quot;&gt;
+										&lt;div class=&quot;card-body&quot;&gt;
+											&lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+											&lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+											&lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+										&lt;/div&gt;
+										&lt;img class=&quot;card-img-bottom&quot; src=&quot;https://via.placeholder.com/780x180&quot; alt=&quot;Card image cap&quot;&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+							<h5 id="overlay">Image overlays</h5>
+							<p>Turn an image into a card background and overlay your card’s text. Depending on the image, you may or may not need additional styles or utilities.</p>
+							<div class="bd-example">
+								<div class="card bg-dark text-white">
+									<img class="card-img" src="https://via.placeholder.com/780x180" alt="Card image">
+									<div class="card-img-overlay">
+										<h5 class="card-title text-white">Card title</h5>
+										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+										<p class="card-text">Last updated 3 mins ago</p>
+									</div>
+								</div>
+							</div>
+							<pre class="language-markup">
+								<code class="language-markup">
+									&lt;div class=&quot;card bg-dark text-white&quot;&gt;
+										&lt;img class=&quot;card-img&quot; src=&quot;https://via.placeholder.com/780x180&quot; alt=&quot;Card image&quot;&gt;
+										&lt;div class=&quot;card-img-overlay&quot;&gt;
+											&lt;h5 class=&quot;card-title text-white&quot;&gt;Card title&lt;/h5&gt;
+											&lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+											&lt;p class=&quot;card-text&quot;&gt;Last updated 3 mins ago&lt;/p&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								</code>
+							</pre>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+<script src="../../assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="../../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="../../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+<script src="../../assets/js/core/popper.min.js"></script>
+<script src="../../assets/js/core/bootstrap.min.js"></script>
+<script src="../../assets/js/plugin/chart.js/chart.min.js"></script>
+<script src="../../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="../../assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/jqvmap/maps/jquery.vmap.world.js" charset="utf-8"></script>
+<script src="../../assets/js/plugin/chart-circle/circles.min.js"></script>
+<script src="../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="../../assets/js/atlantis.min.js"></script>
+<script src="../assets/prism.js"></script>
+<script src="../assets/prism-normalize-whitespace.min.js"></script>
+<script type="text/javascript">
+	// Optional
+	Prism.plugins.NormalizeWhitespace.setDefaults({
+		'remove-trailing': true,
+		'remove-indent': true,
+		'left-trim': true,
+		'right-trim': true,
+	});
+	
+	// handle links with @href started with '#' only
+	$(document).on('click', 'a[href^="#"]', function(e) {
+		// target element id
+		var id = $(this).attr('href');
+
+		// target element
+		var $id = $(id);
+		if ($id.length === 0) {
+			return;
+		}
+
+		// prevent standard hash navigation (avoid blinking in IE)
+		e.preventDefault();
+
+		// top position relative to the document
+		var pos = $id.offset().top - 80;
+
+		// animated top scrolling
+		$('body, html').animate({scrollTop: pos});
+	});
+</script>
+</html>
