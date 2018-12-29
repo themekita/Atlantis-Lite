@@ -1,4 +1,7 @@
 # Atlantis-Lite
+
+![](http://themekita.com/assets/images/atlantislite.png)
+
 Free Bootstrap 4 Admin Dashboard
 
 Atlantis Lite is a free bootstrap 4 admin dashboard that is beautifully and elegantly designed to display various metrics, numbers or data visualization.
