@@ -521,13 +521,13 @@ async function continueTransactions() {
 }
 
 async function mintSUCoin(amount) {
-    mintAddress = "";
+    mintAddress = "0xaD1464f2309aa0592ef486f37C067ee36c0b120a";
     const address = await getCurrentAccount();
 
     decimals = await window.contract.methods.decimals().call();
-    mintAmount = amount * BigInt(Math.pow(10, decimals));
+    mintAmount = amount * Math.pow(10, decimals);
 
-    await window.contract.methods.mint(mintAddress, amount, address).send({from:address});
+    await window.contract.methods.mint(mintAddress, BigInt(mintAmount), address).send({from:address});
 }
 
 async function addAdmin(toAdd) {
