@@ -116,7 +116,7 @@
 						<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
 							<div>
 								<h2 class="text-white pb-2 fw-bold">SUCoin Admin</h2>
-								<h5 class="text-white op-7 mb-2">Manage SUCoin</h5>
+								<h5 class="text-white op-7 mb-2">Manage</h5>
 							</div>
 						</div>
 					</div>
@@ -125,168 +125,43 @@
 					<br><br>
 					<div class="accordion accordion-secondary">
 						<div class="card">
-							<div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							<div class="card-header collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 								<div class="span-icon">
 									<div class="flaticon-box-1"></div>
 								</div>
 								<div class="span-title">
-									Manage Transactions
+									Manage Blacklists
 								</div>
 								<div class="span-mode"></div>
 							</div>
-					
-							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 								<div class="card-body">
-									<button class="btn btn-success" onclick="continueTransactions();">Continue Transactions</button>
-									<button class="btn btn-danger" onclick="pauseTransactions();">Pause Transactions</button>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								<div class="span-icon">
-									<div class="flaticon-box-1"></div>
-								</div>
-								<div class="span-title">
-									Manage Admins
-								</div>
-								<div class="span-mode"></div>
-							</div>
-							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-								<div class="card-body">
-									<label for="squareInput1">Address</label>
-									<input type="text" class="form-control input-square" id="squareInput1" placeholder="Enter Address">
+									<label for="squareInput2">Address</label>
+									<input type="text" class="form-control input-square" id="squareInput2" placeholder="Enter Address">
 									<br>
-									<button class="btn btn-success" onclick="addAdmin(document.getElementById('squareInput1').value)">Make Admin</button>
-									<button class="btn btn-danger" onclick="removeAdmin(document.getElementById('squareInput1').value)">Remove Admin</button>
-								</div>
+									<button class="btn btn-success" onclick="removeFromBlacklist(document.getElementById('squareInput2').value)">Remove From Blacklist</button>
+									<button class="btn btn-danger" onclick="blacklistUser(document.getElementById('squareInput2').value)">Add To Blacklist</button></div>
 							</div>
 						</div>
-						<div class="card">
-							<div class="card-header collapsed" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-								<div class="span-icon">
-									<div class="flaticon-box-1"></div>
-								</div>
-								<div class="span-title">
-									Mint SUCoin
-								</div>
-								<div class="span-mode"></div>
-							</div>
-							<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-								<div class="card-body">
-									<label for="squareInput3">Mint Amount</label>
-									<input type="number" class="form-control input-square" id="squareInput3" placeholder="Enter Amount">
-									<br>
-									<button class="btn btn-primary" onclick="mintSUCoin(document.getElementById('squareInput3').value)">Mint</button></div>
-							</div>
-						</div>
-						<div class="card">
+                        <div class="card">
 							<div class="card-header collapsed" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
 								<div class="span-icon">
 									<div class="flaticon-box-1"></div>
 								</div>
 								<div class="span-title">
-									Add/Remove Hotspots
+									Check Account Balance
 								</div>
 								<div class="span-mode"></div>
 							</div>
 							<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
 								<div class="card-body">
-									<label for="squareInput">Address</label>
-									<input type="text" class="form-control input-square" id="squareInput" placeholder="Enter Address">
-									<label for="squareInput1">Name</label>
-									<input type="text" class="form-control input-square" id="squareInput1" placeholder="Enter Name">
+									<label for="squareInput1">Address</label>
+									<input type="text" class="form-control input-square" id="squareInput4" placeholder="Enter Address">
 									<br>
-									<button class="btn btn-success" onclick="addHotspot(document.getElementById('squareInput').value, document.getElementById('squareInput1').value)">Add Hotspot</button>
-									<button class="btn btn-danger" onclick="removeHotspot(document.getElementById('squareInput').value)">Remove Hotspot</button></div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header collapsed" id="headingSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-								<div class="span-icon">
-									<div class="flaticon-box-1"></div>
+									<h4 id="addressBalance"> Balance: </h4>
+									<button class="btn btn-primary" onclick="getAccountBalance(document.getElementById('squareInput4').value)">Submit</button>
 								</div>
-								<div class="span-title">
-									Check Hotspot
-								</div>
-								<div class="span-mode"></div>
 							</div>
-							<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-								<div class="card-body">
-									<label for="squareInput5">Hotspot Address</label>
-									<input type="text" class="form-control input-square" id="squareInput5" placeholder="Enter Address">
-									<br>
-									<button class="btn btn-success" onclick="getMaxPayment(document.getElementById('squareInput5').value)">Submit</button>
-									<h4 id="hotspotName"> Name: </h4>
-									<h4 id="hotspotMaxBuyer"> Most spending customer: </h4>
-							</div>
-						</div>						
-					</div>
-					<div>
-						<!-- <button class="btn btn-primary" onclick = "getAllHotspots();">Get Hotspots</button> -->
-						<button class="btn btn-primary" onclick = "document.getElementById('hotspotList').innerHTML = '';
-						// const address = await getCurrentAccount();
-  						// let addrList = await window.contract.methods.getHotspotAddressList(address).call();
-
-						var new_table = document.createElement('table');
-						new_table.className = 'table table-striped';
-					  
-						var head = document.createElement('thead');
-						var tableR = document.createElement('tr');
-					  
-						var th1 = document.createElement('th');
-						var text1 = document.createTextNode('Hotspot Name');
-						th1.appendChild(text1);
-						tableR.appendChild(th1);
-					  
-						var th2 = document.createElement('th');
-						var text2 = document.createTextNode('Address');
-						th2.appendChild(text2);
-						tableR.appendChild(th2);
-					  
-						var th3 = document.createElement('th');
-						var text3 = document.createTextNode('Best Customer');
-						th3.appendChild(text3);
-						tableR.appendChild(th3);
-					  
-						var th4 = document.createElement('th');
-						var text4 = document.createTextNode('Best Customer Spending');
-						th4.appendChild(text4);
-						tableR.appendChild(th4);
-					  
-						head.appendChild(tableR);
-						new_table.appendChild(head);
-					  
-						var body = document.createElement('tbody');
-
-						for(i = 0; i < 3; i++) {
-							// hotspot info is gathered and used here!!
-							
-							var tr = document.createElement('tr');
-
-							var td1 = document.createElement('td');
-							td1.innerHTML = 'FASSHANE';
-							var td2 = document.createElement('td');
-							td2.innerHTML = 'abc';
-							var td3 = document.createElement('td');
-							td3.innerHTML = 'ataberkAddres';
-							var td4 = document.createElement('td');
-							td4.innerHTML = '1500';
-
-							tr.appendChild(td1);
-							tr.appendChild(td2);
-							tr.appendChild(td3);
-							tr.appendChild(td4);
-
-							body.appendChild(tr);
-						}
-						
-						new_table.appendChild(body);
-
-						var element = document.getElementById('hotspotList');
-						element.appendChild(new_table);">Get Hotspots</button>
-						<br><br>						
-						<div id="hotspotList">
 						</div>
 					</div>
 				</div>
@@ -300,7 +175,7 @@
 		
 	</div>
 	<!--   Core JS Files   -->
-	<script>loadAll();</script>
+	<!-- <script>loadAll();</script> -->
 	<script src="../assets/js/core/jquery.3.2.1.min.js"></script>
 	<script src="../assets/js/core/popper.min.js"></script>
 	<script src="../assets/js/core/bootstrap.min.js"></script>
