@@ -1,0 +1,57 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.4;
+
+import "@openzeppelin/contracts@4.5.0/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts@4.5.0/security/Pausable.sol";
+import "@openzeppelin/contracts@4.5.0/access/Ownable.sol";
+
+contract SUCoin is ERC20, Pausable, Ownable {
+    constructor() ERC20("SUCoin", "SU") {}
+
+    mapping(address=>bool) isBlacklisted;
+    mapping(address=>bool) isAdmin;
+
+    function blackList(address _user, address adminAddress) public {
+        require(isAdmin[adminAddress], "you are not an admin");
+        require(!isBlacklisted[_user], "user already blacklisted");
+        isBlacklisted[_user] = true;
+        // emit events as well
+    }
+    
+    function removeFromBlacklist(address _user, address adminAddress) public {
+        require(isAdmin[adminAddress], "you are not an admin");
+        require(isBlacklisted[_user], "user already whitelisted");
+        isBlacklisted[_user] = false;
+        // emit events as well
+    }
+
+    function addAdmin(address _user) public onlyOwner {
+        isAdmin[_user] = true;
+    }
+
+    function removeAdmin(adress _user) public onlyOwner {
+        isAdmin[_user] = false;
+    }
+
+    function pause(address adminAddress) public {
+        require(isAdmin[adminAddress], "you are not an admin");
+        _pause();
+    }
+
+    function unpause(address adminAddress) public {
+        require(isAdmin[adminAddress], "you are not an admin");
+        _unpause();
+    }
+
+    function mint(address to, uint256 amount, address adminAddress) public {
+        require(isAdmin[adminAddress], "you are not an admin");
+        _mint(to, amount);
+    }
+
+    function _beforeTokenTransfer(address from, address to, uint256 amount) internal whenNotPaused override
+    {
+        require(!isBlacklisted[to], "Recipient is backlisted");
+        require(!isBlacklisted[from], "Sender is backlisted");
+        super._beforeTokenTransfer(from, to, amount);
+    }
+}
