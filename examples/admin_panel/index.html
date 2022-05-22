@@ -216,75 +216,16 @@
 									<label for="squareInput5">Hotspot Address</label>
 									<input type="text" class="form-control input-square" id="squareInput5" placeholder="Enter Address">
 									<br>
-									<button class="btn btn-success" onclick="getMaxPayment(document.getElementById('squareInput5').value)">Submit</button>
+									<button class="btn btn-success" onclick="getMaxPaymentAll(document.getElementById('squareInput5').value)">Submit</button>
 									<h4 id="hotspotName"> Name: </h4>
 									<h4 id="hotspotMaxBuyer"> Most spending customer: </h4>
+									<h4 id="hotspotMaxAmount"> Amount spent: </h4>
 							</div>
 						</div>						
 					</div>
 					<div>
 						<!-- <button class="btn btn-primary" onclick = "getAllHotspots();">Get Hotspots</button> -->
-						<button class="btn btn-primary" onclick = "document.getElementById('hotspotList').innerHTML = '';
-						// const address = await getCurrentAccount();
-  						// let addrList = await window.contract.methods.getHotspotAddressList(address).call();
-
-						var new_table = document.createElement('table');
-						new_table.className = 'table table-striped';
-					  
-						var head = document.createElement('thead');
-						var tableR = document.createElement('tr');
-					  
-						var th1 = document.createElement('th');
-						var text1 = document.createTextNode('Hotspot Name');
-						th1.appendChild(text1);
-						tableR.appendChild(th1);
-					  
-						var th2 = document.createElement('th');
-						var text2 = document.createTextNode('Address');
-						th2.appendChild(text2);
-						tableR.appendChild(th2);
-					  
-						var th3 = document.createElement('th');
-						var text3 = document.createTextNode('Best Customer');
-						th3.appendChild(text3);
-						tableR.appendChild(th3);
-					  
-						var th4 = document.createElement('th');
-						var text4 = document.createTextNode('Best Customer Spending');
-						th4.appendChild(text4);
-						tableR.appendChild(th4);
-					  
-						head.appendChild(tableR);
-						new_table.appendChild(head);
-					  
-						var body = document.createElement('tbody');
-
-						for(i = 0; i < 3; i++) {
-							// hotspot info is gathered and used here!!
-							
-							var tr = document.createElement('tr');
-
-							var td1 = document.createElement('td');
-							td1.innerHTML = 'FASSHANE';
-							var td2 = document.createElement('td');
-							td2.innerHTML = 'abc';
-							var td3 = document.createElement('td');
-							td3.innerHTML = 'ataberkAddres';
-							var td4 = document.createElement('td');
-							td4.innerHTML = '1500';
-
-							tr.appendChild(td1);
-							tr.appendChild(td2);
-							tr.appendChild(td3);
-							tr.appendChild(td4);
-
-							body.appendChild(tr);
-						}
-						
-						new_table.appendChild(body);
-
-						var element = document.getElementById('hotspotList');
-						element.appendChild(new_table);">Get Hotspots</button>
+						<button class="btn btn-primary" onclick = "getAllHotspots()">Get Hotspots</button>
 						<br><br>						
 						<div id="hotspotList">
 						</div>

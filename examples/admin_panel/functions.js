@@ -120,11 +120,34 @@ async function loadContract() {
             "inputs": [
               {
                 "internalType": "address",
+                "name": "to",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
                 "name": "adminAddress",
                 "type": "address"
               }
             ],
-            "name": "pause",
+            "name": "mint",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "_user",
+                "type": "address"
+              }
+            ],
+            "name": "removeAdmin",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -178,29 +201,6 @@ async function loadContract() {
             "type": "function"
           },
           {
-            "inputs": [
-              {
-                "internalType": "address",
-                "name": "to",
-                "type": "address"
-              },
-              {
-                "internalType": "uint256",
-                "name": "amount",
-                "type": "uint256"
-              },
-              {
-                "internalType": "address",
-                "name": "adminAddress",
-                "type": "address"
-              }
-            ],
-            "name": "mint",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-          },
-          {
             "anonymous": false,
             "inputs": [
               {
@@ -220,6 +220,19 @@ async function loadContract() {
             "type": "event"
           },
           {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "adminAddress",
+                "type": "address"
+              }
+            ],
+            "name": "pause",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
             "anonymous": false,
             "inputs": [
               {
@@ -231,19 +244,6 @@ async function loadContract() {
             ],
             "name": "Paused",
             "type": "event"
-          },
-          {
-            "inputs": [
-              {
-                "internalType": "address",
-                "name": "_user",
-                "type": "address"
-              }
-            ],
-            "name": "removeAdmin",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
           },
           {
             "inputs": [
@@ -465,6 +465,30 @@ async function loadContract() {
             "inputs": [
               {
                 "internalType": "address",
+                "name": "adminAddress",
+                "type": "address"
+              }
+            ],
+            "name": "getHotspotAddressList",
+            "outputs": [
+              {
+                "internalType": "address[]",
+                "name": "",
+                "type": "address[]"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "adminAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
                 "name": "addr",
                 "type": "address"
               }
@@ -484,6 +508,35 @@ async function loadContract() {
             "inputs": [
               {
                 "internalType": "address",
+                "name": "adminAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "addr",
+                "type": "address"
+              }
+            ],
+            "name": "getHotspotMaxAmount",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "adminAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
                 "name": "addr",
                 "type": "address"
               }
@@ -494,6 +547,35 @@ async function loadContract() {
                 "internalType": "string",
                 "name": "",
                 "type": "string"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "adminAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "hotspotAddr",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "userAddr",
+                "type": "address"
+              }
+            ],
+            "name": "getUserPaymentToHotspot",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
               }
             ],
             "stateMutability": "view",
@@ -564,7 +646,7 @@ async function loadContract() {
             "stateMutability": "view",
             "type": "function"
           }
-        ], "0x9D346d16379d49d1F3dF3b874Ae68D2aAB83CFfA"
+        ], "0xC6e22F733C4Cb4AAef30Fdc24c30314Dd79e2FF7"
         )}
 
 async function loadAll() {
@@ -629,15 +711,33 @@ async function removeHotspot(toRemove) {
   await window.contract.methods.removeHotspot(address, toRemove).send({from:address});
 }
 
-async function getMaxPayment(hotspotAddr) {
+async function getMaxPaymentAll(hotspotAddr) {
   const address = await getCurrentAccount();
-  const name =  await window.contract.methods.getHotspotName(hotspotAddr).call();
-  const customer = await window.contract.methods.getHotspotMaxAddress(hotspotAddr).call();
-  const amount = await window.contract.methods.getHotspotMaxAmount(hotspotAddr).call();
+  const name =  await window.contract.methods.getHotspotName(address, hotspotAddr).call();
+  const customer = await window.contract.methods.getHotspotMaxAddress(address, hotspotAddr).call();
+  const amount = await window.contract.methods.getHotspotMaxAmount(address, hotspotAddr).call();
 
   document.getElementById("hotspotName").innerHTML = 'Name: ' + name.toString();
   document.getElementById("hotspotMaxBuyer").innerHTML = 'Most spending customer: ' + customer;
   document.getElementById("hotspotMaxAmount").innerHTML = 'SUCoin spent: ' + amount;
+}
+
+async function hotspotName(hotspotAddr) {
+  const address = await getCurrentAccount();
+  const name = await window.contract.methods.getHotspotName(address, hotspotAddr).call();
+  return name;
+}
+
+async function getMaxPayer(hotspotAddr) {
+  const address = await getCurrentAccount();
+  const addr = await window.contract.methods.getHotspotMaxAddress(address, hotspotAddr).call();
+  return addr;
+}
+
+async function getMaxPayment(hotspotAddr) {
+  const address = await getCurrentAccount();
+  const amount = await window.contract.methods.getHotspotMaxAmount(address, hotspotAddr).call();
+  return amount / Math.pow(10, 18);
 }
 
 async function getAccountBalance(newAddress) {
@@ -654,49 +754,68 @@ async function getAccountBalance(newAddress) {
 }
 
 async function getAllHotspots() {
-  // const address = await getCurrentAccount();
-  // let addrList = await window.contract.methods.getHotspotAddressList(address).call();
+  document.getElementById('hotspotList').innerHTML = '';
+						const address = await getCurrentAccount();
+  						let addrList = await window.contract.methods.getHotspotAddressList(address).call();
 
-  var new_table = document.createElement('table');
-  new_table.className = 'table table-striped';
+						var new_table = document.createElement('table');
+						new_table.className = 'table table-striped';
+					  
+						var head = document.createElement('thead');
+						var tableR = document.createElement('tr');
+					  
+						var th1 = document.createElement('th');
+						var text1 = document.createTextNode('Hotspot Name');
+						th1.appendChild(text1);
+						tableR.appendChild(th1);
+					  
+						var th2 = document.createElement('th');
+						var text2 = document.createTextNode('Address');
+						th2.appendChild(text2);
+						tableR.appendChild(th2);
+					  
+						var th3 = document.createElement('th');
+						var text3 = document.createTextNode('Best Customer');
+						th3.appendChild(text3);
+						tableR.appendChild(th3);
+					  
+						var th4 = document.createElement('th');
+						var text4 = document.createTextNode('Best Customer Spending');
+						th4.appendChild(text4);
+						tableR.appendChild(th4);
+					  
+						head.appendChild(tableR);
+						new_table.appendChild(head);
+					  
+						var body = document.createElement('tbody');
 
-  var head = document.createElement('thead');
-  var tableR = document.createElement('tr');
+						for(i = 0; i < addrList.length; i++) {
+							// hotspot info is gathered and used here!!
+							let current = addrList[i];
 
-  var th1 = document.createElement('th');
-  var text1 = document.createTextNode('Hotspot Name');
-  th1.appendChild(text1);
-  tableR.appendChild(th1);
+							var tr = document.createElement('tr');
 
-  var th2 = document.createElement('th');
-  var text2 = document.createTextNode('Address');
-  th2.appendChild(text2);
-  tableR.appendChild(th2);
+							var td1 = document.createElement('td');
+							td1.innerHTML = await hotspotName(current);
+							var td2 = document.createElement('td');
+							td2.innerHTML = current.toString();
+							var td3 = document.createElement('td');
+							td3.innerHTML = await getMaxPayer(current);
+							var td4 = document.createElement('td');
+							td4.innerHTML = await getMaxPayment(current);
 
-  var th3 = document.createElement('th');
-  var text3 = document.createTextNode('Best Customer');
-  th3.appendChild(text3);
-  tableR.appendChild(th3);
+							tr.appendChild(td1);
+							tr.appendChild(td2);
+							tr.appendChild(td3);
+							tr.appendChild(td4);
 
-  var th4 = document.createElement('th');
-  var text4 = document.createTextNode('Best Customer Spending');
-  th4.appendChild(text4);
-  tableR.appendChild(th4);
+							body.appendChild(tr);
+						}
+						
+						new_table.appendChild(body);
 
-  head.appendChild(tableR);
-  new_table.appendChild(head);
-
-  
-
-  var element = document.getElementById('hotspotList');
-  element.appendChild(new_table);
-  // for(i = 0; i < addrList.length; i++) {
-  //   var tag = document.createElement("p");
-  //   var text = document.createTextNode("Tutorix is the best e-learning platform");
-  //   tag.appendChild(text);
-  //   var element = document.getElementById("new");
-  //   element.appendChild(tag);
-  // }
+						var element = document.getElementById('hotspotList');
+						element.appendChild(new_table);
 }
 
 function testFunc() {
